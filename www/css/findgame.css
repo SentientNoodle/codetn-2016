@@ -1,0 +1,70 @@
+body {
+    background-color: white; /* Change to an image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+    height: 100vh;
+}
+
+.pvpbanner {
+  background-image: url("../media/pvpbanner.png"); /* I made the background so plez no hurtful words <3 */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 30%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.requests {
+    height: 100vh;
+    background-color: orange;
+    overflow-y: auto;
+}
+
+.users {
+    height: 100vh;
+    background-color: blue;
+    overflow-y: auto;
+}
+
+.request {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.request span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.request span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.request:hover span {
+  padding-right: 25px;
+}
+
+.request:hover span:after {
+  opacity: 1;
+  right: 0;
+}

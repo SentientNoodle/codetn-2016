@@ -1,0 +1,23 @@
+body {
+    /* Fit background image to screen size */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+/*  */
+.jumbotron {
+    width: 100%;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    opacity: .8125;
+    transition: opacity 1s;
+}
+
+.jumbotron:hover {
+    opacity: 1.0;
+}
+
+.jumbotron div {
+    display: inline-block
+}

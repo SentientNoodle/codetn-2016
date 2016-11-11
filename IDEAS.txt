@@ -1,0 +1,10 @@
+    - For the teacher recommendation, we make a "Recommend a teacher" button and we can do
+        if(student id != any student id in database that recommended already) { email teacher }
+        else { <h1> you already recommended that teacher! </h1> }  
+        or something like that. 
+        
+    - Required amount of text can be set by teacher for daily question answer. 
+    
+    - Create pvp, market, and inventory picture for the buttons --- Ask about resizing?
+    
+    - For about page features, have a toggle button showing about our website, goals, etc. and then have it toggle and show the website's features.

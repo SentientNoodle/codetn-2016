@@ -1,0 +1,376 @@
+[21-Oct-2016 20:19:08 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:19:08 UTC] PHP Stack trace:
+[21-Oct-2016 20:19:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:19:22 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:19:22 UTC] PHP Stack trace:
+[21-Oct-2016 20:19:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:19:23 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:19:23 UTC] PHP Stack trace:
+[21-Oct-2016 20:19:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:20:23 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:20:23 UTC] PHP Stack trace:
+[21-Oct-2016 20:20:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:20:24 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:20:24 UTC] PHP Stack trace:
+[21-Oct-2016 20:20:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:21:11 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:21:11 UTC] PHP Stack trace:
+[21-Oct-2016 20:21:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:21:12 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:21:12 UTC] PHP Stack trace:
+[21-Oct-2016 20:21:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:21:15 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:21:15 UTC] PHP Stack trace:
+[21-Oct-2016 20:21:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:21:16 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:21:16 UTC] PHP Stack trace:
+[21-Oct-2016 20:21:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:21:17 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:21:17 UTC] PHP Stack trace:
+[21-Oct-2016 20:21:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:21:18 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:21:18 UTC] PHP Stack trace:
+[21-Oct-2016 20:21:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:21:18 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:21:18 UTC] PHP Stack trace:
+[21-Oct-2016 20:21:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:23:57 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/php/navbar.php on line 36
+[21-Oct-2016 20:23:57 UTC] PHP Stack trace:
+[21-Oct-2016 20:23:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[21-Oct-2016 20:45:45 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/php/navbar.php on line 26
+[21-Oct-2016 20:45:45 UTC] PHP Stack trace:
+[21-Oct-2016 20:45:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[21-Oct-2016 20:45:45 UTC] PHP   2. include() /home/ubuntu/workspace/www/index.php:31
+[21-Oct-2016 20:45:45 UTC] PHP   3. signedIn() /home/ubuntu/workspace/php/navbar.php:72
+[21-Oct-2016 20:45:51 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/php/navbar.php on line 26
+[21-Oct-2016 20:45:51 UTC] PHP Stack trace:
+[21-Oct-2016 20:45:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[21-Oct-2016 20:45:51 UTC] PHP   2. include() /home/ubuntu/workspace/www/index.php:31
+[21-Oct-2016 20:45:51 UTC] PHP   3. signedIn() /home/ubuntu/workspace/php/navbar.php:72
+[21-Oct-2016 21:00:47 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of variables doesn't match number of parameters in prepared statement in /home/ubuntu/workspace/php/navbar.php on line 29
+[21-Oct-2016 21:00:47 UTC] PHP Stack trace:
+[21-Oct-2016 21:00:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[21-Oct-2016 21:00:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/index.php:31
+[21-Oct-2016 21:00:47 UTC] PHP   3. signedIn() /home/ubuntu/workspace/php/navbar.php:74
+[21-Oct-2016 21:00:47 UTC] PHP   4. mysqli_stmt->bind_param() /home/ubuntu/workspace/php/navbar.php:29
+[24-Oct-2016 19:52:01 UTC] PHP Warning:  include(../php/getNews.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/www/classhome01.php on line 47
+[24-Oct-2016 19:52:01 UTC] PHP Stack trace:
+[24-Oct-2016 19:52:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 19:52:01 UTC] PHP Warning:  include(): Failed opening '../php/getNews.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/www/classhome01.php on line 47
+[24-Oct-2016 19:52:01 UTC] PHP Stack trace:
+[24-Oct-2016 19:52:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:23:08 UTC] PHP Warning:  include(../sqlconnect.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/php/getNews.php on line 2
+[24-Oct-2016 20:23:08 UTC] PHP Stack trace:
+[24-Oct-2016 20:23:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:23:08 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:91
+[24-Oct-2016 20:23:08 UTC] PHP Warning:  include(): Failed opening '../sqlconnect.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/php/getNews.php on line 2
+[24-Oct-2016 20:23:08 UTC] PHP Stack trace:
+[24-Oct-2016 20:23:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:23:08 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:91
+[24-Oct-2016 20:23:08 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/php/getNews.php on line 4
+[24-Oct-2016 20:23:08 UTC] PHP Stack trace:
+[24-Oct-2016 20:23:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:23:08 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:91
+[24-Oct-2016 20:23:12 UTC] PHP Warning:  include(../sqlconnect.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/php/getNews.php on line 2
+[24-Oct-2016 20:23:12 UTC] PHP Stack trace:
+[24-Oct-2016 20:23:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:23:12 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:92
+[24-Oct-2016 20:23:12 UTC] PHP Warning:  include(): Failed opening '../sqlconnect.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/php/getNews.php on line 2
+[24-Oct-2016 20:23:12 UTC] PHP Stack trace:
+[24-Oct-2016 20:23:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:23:12 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:92
+[24-Oct-2016 20:23:12 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/php/getNews.php on line 4
+[24-Oct-2016 20:23:12 UTC] PHP Stack trace:
+[24-Oct-2016 20:23:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:23:12 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:92
+[24-Oct-2016 20:23:20 UTC] PHP Warning:  include(../sqlconnect.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/php/getNews.php on line 2
+[24-Oct-2016 20:23:20 UTC] PHP Stack trace:
+[24-Oct-2016 20:23:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:23:20 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:92
+[24-Oct-2016 20:23:20 UTC] PHP Warning:  include(): Failed opening '../sqlconnect.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/php/getNews.php on line 2
+[24-Oct-2016 20:23:20 UTC] PHP Stack trace:
+[24-Oct-2016 20:23:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:23:20 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:92
+[24-Oct-2016 20:23:20 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/php/getNews.php on line 4
+[24-Oct-2016 20:23:20 UTC] PHP Stack trace:
+[24-Oct-2016 20:23:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:23:20 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:92
+[24-Oct-2016 20:31:08 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/php/getNews.php on line 5
+[24-Oct-2016 20:31:08 UTC] PHP Stack trace:
+[24-Oct-2016 20:31:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:31:08 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:100
+[24-Oct-2016 20:31:08 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/php/getNews.php:5
+[24-Oct-2016 20:31:08 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/php/getNews.php on line 10
+[24-Oct-2016 20:31:08 UTC] PHP Stack trace:
+[24-Oct-2016 20:31:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:31:08 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:100
+[24-Oct-2016 20:31:09 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/php/getNews.php on line 5
+[24-Oct-2016 20:31:09 UTC] PHP Stack trace:
+[24-Oct-2016 20:31:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:31:09 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:100
+[24-Oct-2016 20:31:09 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/php/getNews.php:5
+[24-Oct-2016 20:31:09 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/php/getNews.php on line 10
+[24-Oct-2016 20:31:09 UTC] PHP Stack trace:
+[24-Oct-2016 20:31:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:31:09 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:100
+[24-Oct-2016 20:31:14 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/php/getNews.php on line 5
+[24-Oct-2016 20:31:14 UTC] PHP Stack trace:
+[24-Oct-2016 20:31:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:31:14 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:100
+[24-Oct-2016 20:31:14 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/php/getNews.php:5
+[24-Oct-2016 20:31:14 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/php/getNews.php on line 10
+[24-Oct-2016 20:31:14 UTC] PHP Stack trace:
+[24-Oct-2016 20:31:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/classhome01.php:0
+[24-Oct-2016 20:31:14 UTC] PHP   2. include() /home/ubuntu/workspace/www/classhome01.php:100
+[25-Oct-2016 13:42:11 UTC] PHP Fatal error:  Cannot redeclare signedIn() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 134
+[25-Oct-2016 13:42:11 UTC] PHP Stack trace:
+[25-Oct-2016 13:42:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[25-Oct-2016 20:40:11 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/php/getQuestion.php on line 13
+[25-Oct-2016 20:40:11 UTC] PHP Stack trace:
+[25-Oct-2016 20:40:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[25-Oct-2016 20:40:14 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/php/getQuestion.php on line 13
+[25-Oct-2016 20:40:14 UTC] PHP Stack trace:
+[25-Oct-2016 20:40:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[25-Oct-2016 20:42:13 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/php/getQuestion.php on line 13
+[25-Oct-2016 20:42:13 UTC] PHP Stack trace:
+[25-Oct-2016 20:42:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[25-Oct-2016 20:42:32 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/php/getQuestion.php on line 13
+[25-Oct-2016 20:42:32 UTC] PHP Stack trace:
+[25-Oct-2016 20:42:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[25-Oct-2016 20:47:57 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/www/class.php on line 14
+[25-Oct-2016 20:48:02 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/www/class.php on line 14
+[25-Oct-2016 20:48:06 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/www/class.php on line 14
+[25-Oct-2016 20:48:08 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/www/class.php on line 14
+[28-Oct-2016 19:40:13 UTC] PHP Warning:  include(../php/checkAnswer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/www/class.php on line 13
+[28-Oct-2016 19:40:13 UTC] PHP Stack trace:
+[28-Oct-2016 19:40:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 19:40:13 UTC] PHP Warning:  include(): Failed opening '../php/checkAnswer.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/www/class.php on line 13
+[28-Oct-2016 19:40:13 UTC] PHP Stack trace:
+[28-Oct-2016 19:40:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 19:41:33 UTC] PHP Warning:  include(../php/checkAnswer.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/www/class.php on line 13
+[28-Oct-2016 19:41:33 UTC] PHP Stack trace:
+[28-Oct-2016 19:41:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 19:41:33 UTC] PHP Warning:  include(): Failed opening '../php/checkAnswer.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/www/class.php on line 13
+[28-Oct-2016 19:41:33 UTC] PHP Stack trace:
+[28-Oct-2016 19:41:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:21:00 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:21:00 UTC] PHP Stack trace:
+[28-Oct-2016 20:21:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:21:00 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:21:00 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:21:00 UTC] PHP Stack trace:
+[28-Oct-2016 20:21:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:21:00 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:21:48 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:21:48 UTC] PHP Stack trace:
+[28-Oct-2016 20:21:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:21:48 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:23:35 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 15
+[28-Oct-2016 20:23:35 UTC] PHP Stack trace:
+[28-Oct-2016 20:23:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:23:35 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:23:37 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 15
+[28-Oct-2016 20:23:37 UTC] PHP Stack trace:
+[28-Oct-2016 20:23:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:23:37 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:23:38 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 15
+[28-Oct-2016 20:23:38 UTC] PHP Stack trace:
+[28-Oct-2016 20:23:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:23:38 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:23:38 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 15
+[28-Oct-2016 20:23:38 UTC] PHP Stack trace:
+[28-Oct-2016 20:23:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:23:38 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:23:40 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 15
+[28-Oct-2016 20:23:40 UTC] PHP Stack trace:
+[28-Oct-2016 20:23:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:23:40 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:25:00 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:25:00 UTC] PHP Stack trace:
+[28-Oct-2016 20:25:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:25:00 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:25:07 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:25:07 UTC] PHP Stack trace:
+[28-Oct-2016 20:25:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:25:07 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:25:55 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:25:55 UTC] PHP Stack trace:
+[28-Oct-2016 20:25:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:25:55 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:25:59 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:25:59 UTC] PHP Stack trace:
+[28-Oct-2016 20:25:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:25:59 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:06 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:06 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:06 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:13 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:13 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:13 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:17 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:17 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:17 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:23 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:23 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:23 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:26 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:26 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:26 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:27 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:27 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:27 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:29 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:29 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:29 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:29 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:29 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:29 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:30 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:30 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:30 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:30 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:30 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:30 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:30 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:30 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:30 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:31 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:31 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:31 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:31 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:31 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:31 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:31 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:31 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:31 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:32 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:32 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:32 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:33 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:33 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:33 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:26:34 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:26:34 UTC] PHP Stack trace:
+[28-Oct-2016 20:26:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:26:34 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:27:15 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:27:15 UTC] PHP Stack trace:
+[28-Oct-2016 20:27:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:27:15 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:27:19 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:27:19 UTC] PHP Stack trace:
+[28-Oct-2016 20:27:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:27:19 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:27:26 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:27:26 UTC] PHP Stack trace:
+[28-Oct-2016 20:27:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:27:26 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:27:34 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:27:34 UTC] PHP Stack trace:
+[28-Oct-2016 20:27:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:27:34 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:28:56 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:28:56 UTC] PHP Stack trace:
+[28-Oct-2016 20:28:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:28:56 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:29:02 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:29:02 UTC] PHP Stack trace:
+[28-Oct-2016 20:29:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:29:02 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:31:24 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:31:24 UTC] PHP Stack trace:
+[28-Oct-2016 20:31:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:31:24 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:31:24 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/php/getQuestion.php:14
+[28-Oct-2016 20:31:26 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:31:26 UTC] PHP Stack trace:
+[28-Oct-2016 20:31:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:31:26 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:31:26 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/php/getQuestion.php:14
+[28-Oct-2016 20:31:30 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/php/getQuestion.php on line 14
+[28-Oct-2016 20:31:30 UTC] PHP Stack trace:
+[28-Oct-2016 20:31:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Oct-2016 20:31:30 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:81
+[28-Oct-2016 20:31:30 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/php/getQuestion.php:14
+[01-Nov-2016 20:05:28 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/php/checkAnswer.php on line 2
+[01-Nov-2016 20:05:28 UTC] PHP Stack trace:
+[01-Nov-2016 20:05:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[01-Nov-2016 20:05:28 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:13
+[05-Nov-2016 13:53:33 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 45
+[05-Nov-2016 13:53:33 UTC] PHP Stack trace:
+[05-Nov-2016 13:53:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[05-Nov-2016 13:53:33 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:82
+[05-Nov-2016 13:58:37 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 51
+[05-Nov-2016 13:58:37 UTC] PHP Stack trace:
+[05-Nov-2016 13:58:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[05-Nov-2016 13:58:37 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:82
+[05-Nov-2016 14:46:51 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 58
+[05-Nov-2016 14:46:51 UTC] PHP Stack trace:
+[05-Nov-2016 14:46:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[05-Nov-2016 14:46:51 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:86
+[05-Nov-2016 14:51:24 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 6
+[05-Nov-2016 14:51:24 UTC] PHP Stack trace:
+[05-Nov-2016 14:51:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[05-Nov-2016 14:51:24 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:86
+[05-Nov-2016 14:57:24 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getQuestion.php on line 23
+[05-Nov-2016 14:57:24 UTC] PHP Stack trace:
+[05-Nov-2016 14:57:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[05-Nov-2016 14:57:24 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:88
+[07-Nov-2016 21:29:18 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/php/checkAnswer.php on line 20
+[07-Nov-2016 21:29:18 UTC] PHP Stack trace:
+[07-Nov-2016 21:29:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[07-Nov-2016 21:29:52 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/php/checkAnswer.php on line 20
+[07-Nov-2016 21:29:52 UTC] PHP Stack trace:
+[07-Nov-2016 21:29:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[07-Nov-2016 21:31:36 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/ubuntu/workspace/php/checkAnswer.php on line 20
+[07-Nov-2016 21:31:36 UTC] PHP Stack trace:
+[07-Nov-2016 21:31:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[07-Nov-2016 21:32:29 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/checkAnswer.php on line 13
+[07-Nov-2016 21:32:29 UTC] PHP Stack trace:
+[07-Nov-2016 21:32:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[07-Nov-2016 21:32:29 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:14
+[07-Nov-2016 21:33:21 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/checkAnswer.php on line 13
+[07-Nov-2016 21:33:21 UTC] PHP Stack trace:
+[07-Nov-2016 21:33:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[07-Nov-2016 21:33:21 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:14
+[07-Nov-2016 21:33:44 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/checkAnswer.php on line 13
+[07-Nov-2016 21:33:44 UTC] PHP Stack trace:
+[07-Nov-2016 21:33:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[07-Nov-2016 21:33:44 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:14
+[07-Nov-2016 21:36:03 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/checkAnswer.php on line 13
+[07-Nov-2016 21:36:03 UTC] PHP Stack trace:
+[07-Nov-2016 21:36:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[07-Nov-2016 21:36:03 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:14
+[07-Nov-2016 21:36:24 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/checkAnswer.php on line 13
+[07-Nov-2016 21:36:24 UTC] PHP Stack trace:
+[07-Nov-2016 21:36:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[07-Nov-2016 21:36:24 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:14
+[07-Nov-2016 21:36:30 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/checkAnswer.php on line 13
+[07-Nov-2016 21:36:30 UTC] PHP Stack trace:
+[07-Nov-2016 21:36:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[07-Nov-2016 21:36:30 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:14
+[07-Nov-2016 21:58:19 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/www/inventory.php on line 13
+[07-Nov-2016 21:58:19 UTC] PHP Stack trace:
+[07-Nov-2016 21:58:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/inventory.php:0
+[07-Nov-2016 21:58:34 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/www/inventory.php on line 13
+[07-Nov-2016 21:58:34 UTC] PHP Stack trace:
+[07-Nov-2016 21:58:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/inventory.php:0
+[07-Nov-2016 21:58:39 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/www/inventory.php on line 13
+[07-Nov-2016 21:58:39 UTC] PHP Stack trace:
+[07-Nov-2016 21:58:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/inventory.php:0
