@@ -374,3 +374,399 @@
 [07-Nov-2016 21:58:39 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/www/inventory.php on line 13
 [07-Nov-2016 21:58:39 UTC] PHP Stack trace:
 [07-Nov-2016 21:58:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/inventory.php:0
+[18-Nov-2016 21:14:32 UTC] PHP Warning:  explode() expects at least 2 parameters, 1 given in /home/ubuntu/workspace/php/getQuestion.php on line 34
+[18-Nov-2016 21:14:32 UTC] PHP Stack trace:
+[18-Nov-2016 21:14:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[18-Nov-2016 21:14:32 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[18-Nov-2016 21:14:32 UTC] PHP   3. explode() /home/ubuntu/workspace/php/getQuestion.php:34
+[18-Nov-2016 21:16:23 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/ubuntu/workspace/php/getQuestion.php on line 34
+[18-Nov-2016 21:16:23 UTC] PHP Stack trace:
+[18-Nov-2016 21:16:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[18-Nov-2016 21:16:55 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/ubuntu/workspace/php/getQuestion.php on line 34
+[18-Nov-2016 21:16:55 UTC] PHP Stack trace:
+[18-Nov-2016 21:16:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[18-Nov-2016 21:16:57 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/ubuntu/workspace/php/getQuestion.php on line 34
+[18-Nov-2016 21:16:57 UTC] PHP Stack trace:
+[18-Nov-2016 21:16:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[18-Nov-2016 21:17:00 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in /home/ubuntu/workspace/php/getQuestion.php on line 34
+[18-Nov-2016 21:17:00 UTC] PHP Stack trace:
+[18-Nov-2016 21:17:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[21-Nov-2016 21:21:57 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/php/checkAnswer.php on line 33
+[21-Nov-2016 21:21:57 UTC] PHP Stack trace:
+[21-Nov-2016 21:21:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[21-Nov-2016 21:21:57 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:14
+[21-Nov-2016 21:39:25 UTC] PHP Parse error:  syntax error, unexpected ']' in /home/ubuntu/workspace/php/getQuestion.php on line 93
+[21-Nov-2016 21:39:25 UTC] PHP Stack trace:
+[21-Nov-2016 21:39:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[28-Nov-2016 20:36:04 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/acceptGame.php on line 25
+[28-Nov-2016 20:36:04 UTC] PHP Stack trace:
+[28-Nov-2016 20:36:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[28-Nov-2016 20:36:04 UTC] PHP   2. include() /home/ubuntu/workspace/www/findgame.php:11
+[28-Nov-2016 20:56:25 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/acceptGame.php on line 25
+[28-Nov-2016 20:56:25 UTC] PHP Stack trace:
+[28-Nov-2016 20:56:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[28-Nov-2016 20:56:25 UTC] PHP   2. include() /home/ubuntu/workspace/www/findgame.php:11
+[28-Nov-2016 20:58:41 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/acceptGame.php on line 25
+[28-Nov-2016 20:58:41 UTC] PHP Stack trace:
+[28-Nov-2016 20:58:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[28-Nov-2016 20:58:41 UTC] PHP   2. include() /home/ubuntu/workspace/www/findgame.php:11
+[28-Nov-2016 20:58:52 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/acceptGame.php on line 25
+[28-Nov-2016 20:58:52 UTC] PHP Stack trace:
+[28-Nov-2016 20:58:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[28-Nov-2016 20:58:52 UTC] PHP   2. include() /home/ubuntu/workspace/www/findgame.php:11
+[28-Nov-2016 21:34:10 UTC] PHP Fatal error:  Cannot redeclare userData() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 19
+[28-Nov-2016 21:34:10 UTC] PHP Stack trace:
+[28-Nov-2016 21:34:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/contact.php:0
+[28-Nov-2016 21:34:11 UTC] PHP Fatal error:  Cannot redeclare userData() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 19
+[28-Nov-2016 21:34:11 UTC] PHP Stack trace:
+[28-Nov-2016 21:34:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/contact.php:0
+[28-Nov-2016 21:34:11 UTC] PHP Fatal error:  Cannot redeclare userData() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 19
+[28-Nov-2016 21:34:11 UTC] PHP Stack trace:
+[28-Nov-2016 21:34:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/contact.php:0
+[28-Nov-2016 21:34:12 UTC] PHP Fatal error:  Cannot redeclare userData() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 19
+[28-Nov-2016 21:34:12 UTC] PHP Stack trace:
+[28-Nov-2016 21:34:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/contact.php:0
+[28-Nov-2016 21:34:12 UTC] PHP Fatal error:  Cannot redeclare userData() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 19
+[28-Nov-2016 21:34:12 UTC] PHP Stack trace:
+[28-Nov-2016 21:34:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/contact.php:0
+[28-Nov-2016 21:34:13 UTC] PHP Fatal error:  Cannot redeclare userData() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 19
+[28-Nov-2016 21:34:13 UTC] PHP Stack trace:
+[28-Nov-2016 21:34:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/contact.php:0
+[28-Nov-2016 21:34:53 UTC] PHP Fatal error:  Cannot redeclare userData() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 19
+[28-Nov-2016 21:34:53 UTC] PHP Stack trace:
+[28-Nov-2016 21:34:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/contact.php:0
+[28-Nov-2016 21:34:53 UTC] PHP Fatal error:  Cannot redeclare userData() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 19
+[28-Nov-2016 21:34:53 UTC] PHP Stack trace:
+[28-Nov-2016 21:34:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/contact.php:0
+[28-Nov-2016 21:34:54 UTC] PHP Fatal error:  Cannot redeclare userData() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 19
+[28-Nov-2016 21:34:54 UTC] PHP Stack trace:
+[28-Nov-2016 21:34:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/contact.php:0
+[28-Nov-2016 21:34:54 UTC] PHP Fatal error:  Cannot redeclare userData() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 19
+[28-Nov-2016 21:34:54 UTC] PHP Stack trace:
+[28-Nov-2016 21:34:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/contact.php:0
+[28-Nov-2016 21:34:54 UTC] PHP Fatal error:  Cannot redeclare userData() (previously declared in /home/ubuntu/workspace/php/navbar.php:19) in /home/ubuntu/workspace/php/navbar.php on line 19
+[28-Nov-2016 21:34:54 UTC] PHP Stack trace:
+[28-Nov-2016 21:34:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/contact.php:0
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[29-Nov-2016 20:57:47 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/php/getQuestion.php on line 97
+[29-Nov-2016 20:57:47 UTC] PHP Stack trace:
+[29-Nov-2016 20:57:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[29-Nov-2016 20:57:47 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:92
+[29-Nov-2016 20:57:47 UTC] PHP   3. in_array() /home/ubuntu/workspace/php/getQuestion.php:97
+[06-Dec-2016 20:48:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/php/checkAnswer.php on line 34
+[06-Dec-2016 20:48:01 UTC] PHP Stack trace:
+[06-Dec-2016 20:48:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[06-Dec-2016 20:48:01 UTC] PHP   2. include() /home/ubuntu/workspace/www/class.php:14
+[06-Dec-2016 20:48:35 UTC] PHP Warning:  include(../php/getActiveMarketItems.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/www/market.php on line 58
+[06-Dec-2016 20:48:35 UTC] PHP Stack trace:
+[06-Dec-2016 20:48:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 20:48:35 UTC] PHP Warning:  include(): Failed opening '../php/getActiveMarketItems.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/www/market.php on line 58
+[06-Dec-2016 20:48:35 UTC] PHP Stack trace:
+[06-Dec-2016 20:48:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 20:50:59 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/www/market.php on line 108
+[06-Dec-2016 20:52:52 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/www/market.php on line 12
+[06-Dec-2016 20:52:58 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/www/market.php on line 12
+[06-Dec-2016 20:52:59 UTC] PHP Parse error:  syntax error, unexpected '.' in /home/ubuntu/workspace/www/market.php on line 12
+[06-Dec-2016 21:20:02 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 5
+[06-Dec-2016 21:20:02 UTC] PHP Stack trace:
+[06-Dec-2016 21:20:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:20:02 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[06-Dec-2016 21:20:14 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 5
+[06-Dec-2016 21:20:14 UTC] PHP Stack trace:
+[06-Dec-2016 21:20:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:20:14 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[06-Dec-2016 21:20:20 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 5
+[06-Dec-2016 21:20:20 UTC] PHP Stack trace:
+[06-Dec-2016 21:20:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:20:20 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[06-Dec-2016 21:21:39 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 5
+[06-Dec-2016 21:21:39 UTC] PHP Stack trace:
+[06-Dec-2016 21:21:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:21:39 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[06-Dec-2016 21:42:04 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 5
+[06-Dec-2016 21:42:04 UTC] PHP Stack trace:
+[06-Dec-2016 21:42:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:42:04 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[06-Dec-2016 21:42:04 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/php/getActiveMarketItems.php:5
+[06-Dec-2016 21:42:04 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 12
+[06-Dec-2016 21:42:04 UTC] PHP Stack trace:
+[06-Dec-2016 21:42:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:42:04 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[06-Dec-2016 21:42:06 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 5
+[06-Dec-2016 21:42:06 UTC] PHP Stack trace:
+[06-Dec-2016 21:42:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:42:06 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[06-Dec-2016 21:42:06 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/php/getActiveMarketItems.php:5
+[06-Dec-2016 21:42:06 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 12
+[06-Dec-2016 21:42:06 UTC] PHP Stack trace:
+[06-Dec-2016 21:42:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:42:06 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[06-Dec-2016 21:42:44 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 5
+[06-Dec-2016 21:42:44 UTC] PHP Stack trace:
+[06-Dec-2016 21:42:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:42:44 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[06-Dec-2016 21:42:44 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/php/getActiveMarketItems.php:5
+[06-Dec-2016 21:42:44 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 12
+[06-Dec-2016 21:42:44 UTC] PHP Stack trace:
+[06-Dec-2016 21:42:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:42:44 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[06-Dec-2016 21:43:26 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of elements in type definition string doesn't match number of bind variables in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 5
+[06-Dec-2016 21:43:26 UTC] PHP Stack trace:
+[06-Dec-2016 21:43:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:43:26 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[06-Dec-2016 21:43:26 UTC] PHP   3. mysqli_stmt->bind_param() /home/ubuntu/workspace/php/getActiveMarketItems.php:5
+[06-Dec-2016 21:43:26 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/php/getActiveMarketItems.php on line 12
+[06-Dec-2016 21:43:26 UTC] PHP Stack trace:
+[06-Dec-2016 21:43:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[06-Dec-2016 21:43:26 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:60
+[08-Dec-2016 21:11:00 UTC] PHP Warning:  include(..php/sqlconnect.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/php/addItemToMarket.php on line 2
+[08-Dec-2016 21:11:00 UTC] PHP Stack trace:
+[08-Dec-2016 21:11:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[08-Dec-2016 21:11:00 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:13
+[08-Dec-2016 21:11:00 UTC] PHP Warning:  include(): Failed opening '..php/sqlconnect.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/php/addItemToMarket.php on line 2
+[08-Dec-2016 21:11:00 UTC] PHP Stack trace:
+[08-Dec-2016 21:11:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[08-Dec-2016 21:11:00 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:13
+[09-Dec-2016 16:22:41 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 16:22:41 UTC] PHP Stack trace:
+[09-Dec-2016 16:22:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 16:22:41 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 16:30:55 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 16:30:55 UTC] PHP Stack trace:
+[09-Dec-2016 16:30:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 16:30:55 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:42:56 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:42:56 UTC] PHP Stack trace:
+[09-Dec-2016 20:42:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:42:56 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:43:30 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:43:30 UTC] PHP Stack trace:
+[09-Dec-2016 20:43:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:43:30 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:44:40 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:44:40 UTC] PHP Stack trace:
+[09-Dec-2016 20:44:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:44:40 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:45:01 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:45:01 UTC] PHP Stack trace:
+[09-Dec-2016 20:45:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:45:01 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:45:02 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:45:02 UTC] PHP Stack trace:
+[09-Dec-2016 20:45:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:45:02 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:45:02 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:45:02 UTC] PHP Stack trace:
+[09-Dec-2016 20:45:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:45:02 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:45:03 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:45:03 UTC] PHP Stack trace:
+[09-Dec-2016 20:45:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:45:03 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:45:09 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:45:09 UTC] PHP Stack trace:
+[09-Dec-2016 20:45:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:45:09 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:46:08 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:46:08 UTC] PHP Stack trace:
+[09-Dec-2016 20:46:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:46:08 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:46:18 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:46:18 UTC] PHP Stack trace:
+[09-Dec-2016 20:46:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:46:18 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:46:33 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:46:33 UTC] PHP Stack trace:
+[09-Dec-2016 20:46:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:46:33 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:46:37 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:46:37 UTC] PHP Stack trace:
+[09-Dec-2016 20:46:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:46:37 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:46:41 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:46:41 UTC] PHP Stack trace:
+[09-Dec-2016 20:46:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:46:41 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:50:24 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:50:24 UTC] PHP Stack trace:
+[09-Dec-2016 20:50:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:50:24 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:51:21 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:51:21 UTC] PHP Stack trace:
+[09-Dec-2016 20:51:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:51:21 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:51:24 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:51:24 UTC] PHP Stack trace:
+[09-Dec-2016 20:51:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:51:24 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 20:53:56 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getMarketItems.php on line 5
+[09-Dec-2016 20:53:56 UTC] PHP Stack trace:
+[09-Dec-2016 20:53:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 20:53:56 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:46
+[09-Dec-2016 21:33:24 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/ubuntu/workspace/php/buyItemFromMarket.php on line 10
+[09-Dec-2016 21:33:24 UTC] PHP Stack trace:
+[09-Dec-2016 21:33:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 21:33:24 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:15
+[09-Dec-2016 21:35:59 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/ubuntu/workspace/php/buyItemFromMarket.php on line 10
+[09-Dec-2016 21:35:59 UTC] PHP Stack trace:
+[09-Dec-2016 21:35:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 21:35:59 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:15
+[09-Dec-2016 21:38:09 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/ubuntu/workspace/php/buyItemFromMarket.php on line 10
+[09-Dec-2016 21:38:09 UTC] PHP Stack trace:
+[09-Dec-2016 21:38:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 21:38:09 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:15
+[09-Dec-2016 21:38:25 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/ubuntu/workspace/php/buyItemFromMarket.php on line 11
+[09-Dec-2016 21:38:25 UTC] PHP Stack trace:
+[09-Dec-2016 21:38:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 21:38:25 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:15
+[09-Dec-2016 21:38:42 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/ubuntu/workspace/php/buyItemFromMarket.php on line 12
+[09-Dec-2016 21:38:42 UTC] PHP Stack trace:
+[09-Dec-2016 21:38:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 21:38:42 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:15
+[09-Dec-2016 21:40:11 UTC] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/ubuntu/workspace/php/buyItemFromMarket.php on line 20
+[09-Dec-2016 21:40:11 UTC] PHP Stack trace:
+[09-Dec-2016 21:40:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[09-Dec-2016 21:40:11 UTC] PHP   2. include() /home/ubuntu/workspace/www/market.php:15
+[12-Dec-2016 21:28:25 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/php/addItemToMarket.php on line 9
+[12-Dec-2016 21:28:25 UTC] PHP Stack trace:
+[12-Dec-2016 21:28:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0
+[12-Dec-2016 21:34:19 UTC] PHP Fatal error:  Call to undefined function startAutoIndexSlide() in /home/ubuntu/workspace/www/index.php on line 33
+[12-Dec-2016 21:34:19 UTC] PHP Stack trace:
+[12-Dec-2016 21:34:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[12-Dec-2016 21:34:25 UTC] PHP Fatal error:  Call to undefined function startAutoIndexSlide() in /home/ubuntu/workspace/www/index.php on line 33
+[12-Dec-2016 21:34:25 UTC] PHP Stack trace:
+[12-Dec-2016 21:34:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[12-Dec-2016 21:34:52 UTC] PHP Warning:  include(../php/main.js): failed to open stream: No such file or directory in /home/ubuntu/workspace/www/index.php on line 33
+[12-Dec-2016 21:34:52 UTC] PHP Stack trace:
+[12-Dec-2016 21:34:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[12-Dec-2016 21:34:52 UTC] PHP Warning:  include(): Failed opening '../php/main.js' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/www/index.php on line 33
+[12-Dec-2016 21:34:52 UTC] PHP Stack trace:
+[12-Dec-2016 21:34:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[12-Dec-2016 21:34:52 UTC] PHP Fatal error:  Call to undefined function startAutoIndexSlide() in /home/ubuntu/workspace/www/index.php on line 33
+[12-Dec-2016 21:34:52 UTC] PHP Stack trace:
+[12-Dec-2016 21:34:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[12-Dec-2016 21:34:53 UTC] PHP Warning:  include(../php/main.js): failed to open stream: No such file or directory in /home/ubuntu/workspace/www/index.php on line 33
+[12-Dec-2016 21:34:53 UTC] PHP Stack trace:
+[12-Dec-2016 21:34:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[12-Dec-2016 21:34:53 UTC] PHP Warning:  include(): Failed opening '../php/main.js' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/www/index.php on line 33
+[12-Dec-2016 21:34:53 UTC] PHP Stack trace:
+[12-Dec-2016 21:34:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[12-Dec-2016 21:34:53 UTC] PHP Fatal error:  Call to undefined function startAutoIndexSlide() in /home/ubuntu/workspace/www/index.php on line 33
+[12-Dec-2016 21:34:53 UTC] PHP Stack trace:
+[12-Dec-2016 21:34:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[12-Dec-2016 21:35:23 UTC] PHP Warning:  include(../js/main.js): failed to open stream: No such file or directory in /home/ubuntu/workspace/www/index.php on line 33
+[12-Dec-2016 21:35:23 UTC] PHP Stack trace:
+[12-Dec-2016 21:35:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[12-Dec-2016 21:35:23 UTC] PHP Warning:  include(): Failed opening '../js/main.js' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/www/index.php on line 33
+[12-Dec-2016 21:35:23 UTC] PHP Stack trace:
+[12-Dec-2016 21:35:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[12-Dec-2016 21:35:23 UTC] PHP Fatal error:  Call to undefined function startAutoIndexSlide() in /home/ubuntu/workspace/www/index.php on line 33
+[12-Dec-2016 21:35:23 UTC] PHP Stack trace:
+[12-Dec-2016 21:35:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/index.php:0
+[12-Dec-2016 21:41:01 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/ubuntu/workspace/php/getMarketItems.php on line 9
+[12-Dec-2016 21:41:01 UTC] PHP Stack trace:
+[12-Dec-2016 21:41:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/market.php:0

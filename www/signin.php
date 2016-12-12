@@ -24,22 +24,28 @@
             include("../php/navbar.php");
         ?>
         <div class="page-header">
-            <h1>Sign in</h1>
+            <h1 style="text-align:center">Sign in</h1>
         </div>
         <?php
             // Small things like this don't need their own file
             if ($incorrect) {
-                echo "<h3 style='color:red;'>Incorrect username or password</h3>";
+                echo "<h3 style='color:red;' align='center'>Incorrect username or password</h3>";
             }
         ?>
-        <form role="form" action="signin.php" method="post">
-            <h3>Student ID</h3>
-            <input type="text" name="sid" id= "sid" required>
-            <h3>Password</h3>
-            <input type="password" name="password" id= "password" required>
-            <br>
-            <br>
-            <input type="submit">
-        </form>
+            <form style="text-align:center" role="form" action="signin.php" method="post">
+                <h3 style="text-align:center;">Student ID</h3>
+                <input type="text" name="sid" id= "sid" required>
+                <h3  style="text-align:center">Password</h3>
+                <input type="password" name="password" id= "password" required>
+                <br>
+                <br>
+                <input type="submit">
+                <br>
+                <br>
+                <a href="signup.php">Don't have an account? Sign Up!</a>
+                <br>
+                <br>
+                <a>Forgot Password</a>
+            </form>
     </body>
 </html>

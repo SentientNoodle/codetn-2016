@@ -25,7 +25,8 @@
         $sql = $conn->prepare("INSERT INTO Users (SID,Firstname,Lastname,Password,isTeacher) VALUES (?,?,?,?,?);");
         $sql->bind_param("ssssi",$sid,$firstname,$lastname,$password,$isteacher);
         $sql->execute();
-    }    
+    }   
+    
     // It's good practice to close the connection when done
     $conn->close();
 ?>

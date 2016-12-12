@@ -86,7 +86,7 @@
                         <li'.$pages[0].'><a href="index.php">Home</a></li>
                             '.userData("classes").'
                         <li'.$pages[2].'><a href="about.php">About</a></li>
-                        <li'.$pages[3].'><a href="http://www.guyfieri.com">Contact</a></li>
+                        <li'.$pages[3].'><a href="contact.php">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right" id="userbox">
                         '.userData("userbox").'

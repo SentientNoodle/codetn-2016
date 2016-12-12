@@ -20,27 +20,16 @@
             $page = "inventory";
             include("../php/head.php");
         ?>
-        <script src="js/inventory.js"></script>
+        
         <title>CodeTN</title>
-        <!-- Set selected background image -->
+        
+
+        <link rel="stylesheet" type="text/css" href="global.css">
+
+
         <style>
             body {
                 background-image: url("../media/backgrounds/<?php echo $imagesinv[$ninv] ?>");
-            }
-            #characterbackground {
-                background-image: url("../media/character.png");
-            }
-            #hat1 {
-                background-image: url("../media/hats/1.png");
-            }
-            #hat2 {
-                background-image: url("../media/hats/2.png");
-            }
-            #hat3 {
-                background-image: url("../media/hats/3.png");
-            }
-            #hat4 {
-                background-image: url("../media/hats/4.png");
             }
             @media screen and (min-width: 1370px) {
                 .inventorybackground {
@@ -71,7 +60,7 @@
                 }
                 .slot {
                     height: 35%;
-                    width: 18%;
+
                 }
             }
             @media screen and (max-width: 1370px) {
@@ -87,6 +76,8 @@
                 .slotbackground {
                     width: 98%;
                     margin-left: 1%;
+                    margin-right: 1%;
+                    width: 75%;
                 }
                 #userinfo {
                     display: none;
@@ -106,6 +97,8 @@
                 }
                 .slot {
                     height: 25%;
+                    width: 25%;
+
                 }
             }
             @media screen and (max-width: 760px) {
@@ -143,6 +136,7 @@
                     display: none;
                 }
             }
+            
         </style>
     </head>
     <body>
@@ -165,36 +159,45 @@
             </div>
             <div class="sidenavarrowhide"><a onclick="openNav()"><span class="sidenavarrow">❯</span></a></div>
             <div id="characterbackground">
-                <div class="hat">
-                </div>
-                <div class="shirt">
+                <div class="positionclothes">
+                    <div class="hat" style="background-image:url('PHP GET HAT HERE')"></div>
+                    <div class="shirt" style="background-image:url('PHP GET HAT HERE')"></div>
                 </div>
             </div>
             <div class="inventorybackground">
                 
                 <div id="userinfo">
-                    <p style="margin-left:1%"><font color="white" size="6"><b>USERNAME HERE<!-- GET USERNAME HERE --></b></font></p>
+                    <div class="positioninfocol">
+                        <p style="margin-left:1%"><font color="white" size="5.5"><b>USERNAME HERE<!-- GET USERNAME HERE --></b></font></p>
                     
-                    <p style="margin-left:2%"><font color="white" size="3">Health: HEALTH HERE<?php echo $userHealth ?></font></p>
-                        <div class="progress" style="margin-left:1%">
-                            <div class="health progress-bar" role="progressbar" aria-valuenow="<?php echo $userHealth ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                        <p style="margin-left:2%"><font color="white" size="3"><b>Health:</b> <!-- Get health here --></font></p>
+                            <div class="progress" style="margin-left:1%">
+                                <div class="health progress-bar" role="progressbar" aria-valuenow="<?php echo $userHealth ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        
+                        <p style="margin-left:2%"><font color="white" size="3"><b>Mana:</b> <!-- Get mana here --></font></p>
+                            <div class="progress" style="margin-left:1%">
+                                <div class="mana progress-bar" role="progressbar" aria-valuenow="<?php ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        <p style="margin-left:2%"><font color="white" size="3"><b>Battle Wins:</b> <!-- # of battles won here --></p>
+                        <p style="margin-left:2%; margin-top:3%"><font color="white" size="3"><b>Tournament Wins:</b> <!-- # of tournaments won here --></p>    
+                    </div> 
+                    <div class="positioninfocol">
+                        <div class="abilitiesbeingused">
+                            <p style="margin-left:2%; margin-top:10%"><font color="white" size="3"><b>Abilities Being Used:</b> </p>
+                            <div class="slot" style="margin-left:1%; margin-right:1%; width:28%; height:85%; vertical-align:top; margin-bottom:1%">
+                            </div>
+                            <div class="slot" style="margin-right:1%; width:28%; height:85%; vertical-align:top;">
+                            </div>
+                            <br>
+                            <div class="slot" style="margin-right:1%; width:28%; height:85%; vertical-align:top;">
+                            </div>
+                            <div class="slot" style="margin-right:1%; width:28%; height:85%; vertical-align:top;">
+                            </div>
                         </div>
-                    <p style="margin-left:2%"><font color="white" size="3">Mana: MANA HERE<?php ?></font></p>
-                        <div class="progress" style="margin-left:1%">
-                            <div class="mana progress-bar" role="progressbar" aria-valuenow="<?php ?>" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-
-                    <p style="margin-left:2%"><font color="white" size="3">Abilities Being Used: </p>
-                    <div class="slot" style="margin-left:1%; margin-right:1%; width:15%">
                     </div>
-                    <div class="slot" style="margin-right:1%; width:15%">
-                    </div>
-                    <div class="slot" style="margin-right:1%; width:15%">
-                    </div>
-                    <div class="slot" style="margin-right:1%; width:15%">
-                    </div>
-                </div>    
-                
+                </div>
+                    
                 <div id="stuffbackground">
                     <div class="stuffsidebar">
                             <button class="button" style="vertical-align:middle" onclick="showItems()"><img src="media/buttons/itemsimage.png" height="100" width="140"></img><br><span>ITEMS</span></button>
@@ -202,8 +205,8 @@
                             <button class="button" style="vertical-align:middle" onclick="showClothes()"><img src="media/buttons/clothesimage.png" height="100" width="100"></img><br><span>CLOTHES</span></button>
                         </div>
                     <button class="positionpage">←</button>
-                    <p style="display:inline-block; margin-left:20%"><font color="white"><b>PAGE <!-- CURRENT PAGE # HERE -->0/0<!-- TOTAL PAGE # HERE --></b></font></p>
-                    <button style="margin-left:20%; background-color:silver; color:black; font-weight:bold;">→</button>
+                    <p style="display:inline-block; margin-left:19%"><font color="white"><b>PAGE <!-- CURRENT PAGE # HERE -->0/0<!-- TOTAL PAGE # HERE --></b></font></p>
+                    <button style="margin-left:19%; background-color:silver; color:black; font-weight:bold;">→</button>
                     <div class="slotbackground">
                         <div class="slot">
                         </div>

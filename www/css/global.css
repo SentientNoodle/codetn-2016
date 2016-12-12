@@ -1,3 +1,12 @@
+body {
+    /* Fit background image to screen size */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+    height: 100vh;
+}
+/*global.css*/
 .nav li:hover {
     background-color: #EFEFEF;
     border-style: none;
@@ -8,3 +17,834 @@
     border: 2px solid #777777;
     border-radius: 8px;
 }
+
+/*index.css*/
+.indexbanner {
+    width: 100%;
+    height: 35%;
+    background-color: white;
+    opacity: .8125;
+    transition: opacity 1s;
+}
+.indexbanner:hover {
+    opacity: 1.0;
+}
+.indexbannerstuff {
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    background-size: 100% 100%;
+}
+.indexslideshow {
+    height: 54%;
+    width: 50%;
+    background-color: gray;
+    border: 3px solid black;
+}
+.indexslideshowentry {
+    height: 95%;
+    width: 100%;
+}
+.indexslideshowbutton {
+    height: 5%;
+    width: 100%;
+}
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/*class.css*/
+.newsbackground {
+    background-image: url("../media/shards_pattern.jpg");
+    height: 45%;
+    width: 65%;
+    border: 5px;
+    border-style: solid;
+    border-color: gray;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+/* this is places the pattern for the daily questions tab --free source image */
+.dailyquestionbackground {
+    background-image: url("../media/shards_pattern.jpg");
+    height: 50%;
+    width: 65%;
+    border: 5px;
+    border-style: solid;
+    border-color: gray;
+    margin-left: 1%;
+}
+/* This colors the background and makes a box for the sidebar */ 
+.positionall {
+    height: 100%;
+    width: 100%;
+}
+.positionbuttons { /* Use this as the nav bar when mobile */
+    height: 100%;
+    width: 95.5%;
+    float: right;
+}
+.positionline {
+    height: 96.9%;
+    width: 32.8%;
+    float: right;
+    border-left-style: double;
+    border-color: gray;
+}
+/* This is the free source background for the news tab */
+.newsentrybackground {
+    height: 100%;
+    width: 75%;
+    float: left;
+    margin-left: 12.5%;
+    overflow-y: auto;
+}
+
+p.newstitle {
+    font-weight: bold;
+    font-size: 300%;
+}
+p.dailyquestiontitle {
+    font-weight: bold;
+    font-size: 150%;
+    opacity: 0.75;
+}
+/* This is the box for the daily question */
+.dailyquestion {
+    height: 28%;
+    width: 75%;
+    overflow-y: auto;
+    float: left;
+    margin-left: 12.5%;
+    margin-bottom: 1%;
+    background-color: white;
+    opacity: 0.75;
+    border: 2px solid gray;
+}
+textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    opacity: 0.75;
+    background-color: white;
+    resize: none;
+    overflow-y: auto;
+}
+/* This is the free source background for the the daily question answer box  */
+.dailyquestionanswerbackground {
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+    overflow-y: auto;
+}
+#dqletteranswerbackground {
+    margin-top: 1%;
+}
+#dqletteranswerbackgroundle {
+    width: 90%;
+    height: 65%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+}
+#dqexplainanswerbackgroundle {
+    width: 100%;
+    height: 42%;
+    float: left;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: -15px;
+    font-size: 36px;
+    margin-right: 55px;
+}
+.sidebarhide {
+    display: none;
+}
+.sidenavarrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.sidenavarrow {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.sidenavarrow:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+pre {
+    background: none;
+    border: none;
+}
+/*contact.css*/
+.sideBar {
+    height: 100%;
+    width: 20%;
+    border-right: 3px double gray;
+    display: inline-block;
+    vertical-align: top;
+}
+/*about.css*/
+#positionall {
+    height: 90%;
+    width: 100%;
+}
+.sideBar {
+    height: 100%;
+    width: 20%;
+    border-right: 3px double gray;
+    display: inline-block;
+    vertical-align: top;
+}
+.aboutThings {
+    height: 100%;
+    width: 79%;
+    display: inline-block;
+    vertical-align:top;
+}
+.features {
+    height: 28%;
+    width: 32%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    background-color: black;
+    opacity: 0.85;
+    display: inline-block;
+    border: 3px solid gray;
+}
+#positionFeatures {
+    height: 100%;
+    width: 100%;
+}    
+.aboutWeb {
+    height: 100%;
+    width: 90%;
+    margin-left: 5.5%;
+    background-color: black;
+    opacity: 0.85;
+    border: 3px solid gray;
+}
+#positionAboutWeb {
+    height: 100%;
+    width: 100%;
+}
+.aboutUs {
+    height: 33.33%;
+    width: 45%;
+    background-color: black;
+    opacity: 0.85;
+    border: 3px solid gray;
+    display: inline-block;
+}
+#positionAboutUs {
+    height: 97.5%;
+    width: 100%;
+}
+.aboutPicture {
+    height: 98%;
+    width: 35%;
+    margin-top: .5%;
+    margin-left: 1%;
+    background-color: red;
+    display: inline-block;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.aboutText {
+    height: 98%;
+    width: 62%;
+    margin-right: 1%;
+    margin-left: .5%;
+    margin-top: .5%;
+    background-color: blue;
+    display: inline-block;
+    float: right;
+}
+#aboutpvp {
+    background-image: url("../media/buttons/pvpimage.png");
+}
+/*findgame.css*/
+.pvpbanner {
+  background-image: url("../media/pvpbanner.png"); /* I made the background so plez no hurtful words <3 */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 30%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.positionall {
+  height: 90%;
+  width: 100%;
+}
+
+.positionbattlerequests {
+  height: 100%;
+  width: 30%;
+  border-left: 5px double gray;
+  float: right;
+}
+
+.battlerequests {
+  height: 89%;
+  width: 97%;
+  margin-left: 3%;
+  background-color: black;
+  opacity: 0.75;
+  overflow-y: auto;
+}
+
+.randombattle {
+  height: 89%;
+  width: 97%;
+  margin-right: 3%;
+  background-color: black;
+  opacity: 0.75;
+  overflow-y: auto;
+}
+
+.positionrandombattle {
+  height: 100%;
+  width: 30%;
+  border-right: 5px double gray;
+  float: left;
+}
+
+.requestabattlebutton {
+  display: inline-block;
+}
+
+.battlenotificationsbutton {
+  display: inline-block;
+}
+.requests {
+    height: 100vh;
+    overflow-y: auto;
+    display: none;
+}
+
+.users {
+    height: 100vh;
+    overflow-y: auto;
+    display: none;
+}
+
+.request {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.request span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.request span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.request:hover span {
+  padding-right: 25px;
+}
+
+.request:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*pvp.css*/
+.Battleground {
+     height: 55%;
+    width: 100%;
+}
+.character {
+    height: 100%;
+    width: 21%;
+    display: inline-block;
+    background-image: url("../media/character.png");
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    background-position: center bottom;
+}
+#pvpopponent {
+    background-image: url("../media/pvpcharacter.png");
+}
+#pvpyou {
+    background-image: url("../media/pvpcharacter.png");
+}
+.stats {
+    height: 100%;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+#positionLeftSide {
+    width: 21%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+#positionRightSide {
+    width: 21%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+#gameOptions {
+    width: 100%;
+    height: 10%;
+}
+.settingsButton {
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    width: 17%;
+    height: 100%;
+}
+.settingsButton:hover {
+    background-color: #555555;
+    color: white;
+}
+#emotes {
+    width: 100%;
+    height: 55%;
+    position: absolute;
+}
+#emoteText {
+    font-size:200%;
+    font-weight:bold;
+    color:black;
+    transform:rotate(180deg);
+    text-align:center;
+    vertical-align:middle;
+    line-height:120px
+}
+.emoteBubble {
+    width: 100%;
+    height: 50%;
+    background-image: url("../media/emotebubble.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 1;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.emoteButton {
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    width: 50%;
+    height: 19%;
+}
+.emoteButton:hover {
+    background-color: #555555;
+    color: white;
+}
+.nameTag {
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    width: 74.8%;
+    height: 9%;
+    vertical-align: top; 
+}
+.redButton {
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+    width: 24.25%;
+    height: 9%;
+    vertical-align: top;
+}
+.redButton:hover {
+    background-color: #f44336;
+    color: white;
+}
+.health {
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    margin-top: 1%;
+    border: 2px solid #555555;
+}
+.mana {
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    margin-top: 1%;
+    border: 2px solid #555555;
+}
+.abilities {
+    height: 65%;
+    width: 100%;
+    display: inline-block;
+    margin-top: 3%;
+    vertical-align:top;
+}
+.ability {
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    width: 24.25%;
+    height: 100%;
+    vertical-align: top;
+}
+.ability:hover {
+    background-color: #555555;
+    color: white;
+}
+.abilityImage {
+    height: 35%;
+    width: 100%;
+    margin-bottom: 3%;
+}
+.abilityText {
+    height: 35%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+.abilityDamage {
+    height: 7%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+.abilityUses {
+    height: 7%;
+    width: 100%;
+}
+/*market.css*/
+.positionmarket {
+    height: 100%;
+    width: 90.5%;
+    border: 4px solid gray;
+    background-color: black;
+    opacity: .8;
+}
+.positionmarketitems {
+    height: 100%;
+    width: 75%;
+    display: inline-block;
+}
+.marketitemsbackground {
+    height: 97.5%;
+    width: 66.65%;
+    display: inline-block;
+    vertical-align: top;
+    overflow-y: auto;
+    margin-top: 1%;
+    margin-left: 1%;
+    padding-right: .5%;
+    border: 3px solid gray;
+}
+.marketactivebackground {
+    height: 97.5%;
+    width: 66.65%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1%;
+    margin-left:1%;
+    padding-right: .5%;
+    border: 3px solid gray;
+}
+.marketbuttonsbackground {
+    height: 100%;
+    width: 29.8%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: .5%;
+    border-left: 5px double gray;
+}
+.marketstatsbackground {
+    height: 100%;
+    width: 24.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+.marketstats {
+    height: 30%;
+    width: 100%;
+}
+.marketentry {
+    height: 18%;
+    width: 100%;
+    background-color: white;
+    opacity: .7;
+    margin-bottom: 1.5%;
+}
+/*inventory.css*/
+.positionall {
+    height: 90%;
+    width: 100%;
+}
+#characterbackground {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    float: left;
+    margin-left: 4%;
+    background-repeat: no-repeat;
+    background-size: 100% 80%;
+    background-position: 100% 85%;
+    background-image: url("../media/character.png");
+}
+.positionclothes {
+    height: 100%;
+    width: 100%;
+}
+.hat {
+    width: 100%;
+    height: 25%;
+    background-size: 40% 100%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+}
+.shirt {
+    width: 100%;
+    height: 40%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 25%;
+}
+.inventorybackground {
+    width: 59%;
+    height: 100%;
+    float: right;
+    margin-right: 2%;
+}
+#userinfo {
+    height: 49.5%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    margin-bottom: 1%;
+}
+.positioninfocol {
+    width: 48%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.progress {
+    display: inline-block;
+    width: 90%;
+}
+.mana {
+    background-color: blue;
+    width: 100%;
+}
+.health {
+    background-color: red;
+    width: 100%;
+}
+#stuffbackground {
+    height: 49.5%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+.stuffsidebar {
+    width: 25%;
+    height: 100%;
+    border-right: 5px double gray;
+    float: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.positionpage {
+    margin-left: 9%;
+    background-color: silver;
+    color: black;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.slotbackground {
+    height: 90%;
+    width: 74%;
+    float: right;
+    margin-right: 1%;
+    overflow-y: auto;
+}
+.market-slot {
+    width: 30%;
+    height: 20%;
+    display: inline-block;
+    vertical-align: top;
+    overflow-y: hidden;
+    margin-left: 1%;
+    margin-top: 1.5%;
+    background-color: white;
+    opacity: 0.7;
+}
+.market-slot:hover {
+    display: inline-table;
+}
+.abilitiesbeingused {
+    height: 40%;
+    width: 100%;
+}
+.sidebar {
+    width: 40%;
+    height: 100%;
+    border-right: 5px double gray;
+    display: none;
+    float: left;
+}
+.sidenavarrowhide {
+    display: none;
+}
+
+/*signup.css*/
+.signup-input {
+    width: 15%;
+}
+
+.passStrengthBox {
+    width: 20%;
+}
+
+meter {
+    width: 100%;
+}
+
+meter::-webkit-meter-bar {
+    background: #DDDDDD;
+}
+
+meter[value="1"]::-webkit-meter-optimum-value {background: red;}
+meter[value="2"]::-webkit-meter-optimum-value {background: orange;}
+meter[value="3"]::-webkit-meter-optimum-value {background: yellow;}
+meter[value="4"]::-webkit-meter-optimum-value {background: green;}

@@ -30,8 +30,11 @@
             $page = "class"; 
             include("../php/head.php");
         ?>
+        
         <title>Class</title>
-        <!-- Set selected background image -->
+        
+        <link rel="stylesheet" type="text/css" href="global.css">
+        
         <style>
             body {
                 background-image: url("../media/backgrounds/<?php echo $imagesclass[$nclass] ?>");
@@ -52,6 +55,7 @@
             }
         </style>
     </head>
+    
     <body>
         <?php
             include("../php/navbar.php");
@@ -59,29 +63,17 @@
         
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="pvp.php"><button class="button" style="vertical-align:middle"><img src="media/buttons/pvpimage.png" height="80" width="80"></img><br><span>PVP</span></button></a>
+        <a href="findgame.php"><button class="button" style="vertical-align:middle"><img src="media/buttons/pvpimage.png" height="80" width="80"></img><br><span>PVP</span></button></a>
         <a href="market.php"><button class="button" style="vertical-align:middle"><img src="media/buttons/marketimage.png" height="80" width="110"><span>MARKET</span></button></a>
         <a href="inventory.php"><button class="button" style="vertical-align:middle" onclick="inventory.php"><img src="media/buttons/inventoryimage.png" height="80" width="70"><span>INVENTORY</span></button></a>
     </div>
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-    
-    </body>
         
         <div class="positionall">
             <div class="positionline">
                 <div class="positionbuttons">
-                     <a href="findgame.php"><button class="button" style="vertical-align:middle"><img src="media/buttons/pvpimage.png" height="80" width="110"></img><span>PVP</span></button></a>
-                     <a href="market.php"><button class="button" style="vertical-align:middle"><img src="media/buttons/marketimage.png" height="80" width="110"><span>MARKET</span></button></a>
-                     <a href="inventory.php"><button class="button" style="vertical-align:middle"><img src="media/buttons/inventoryimage.png" height="80" width="70"><span>INVENTORY</span></button></a>
+                     <a href="findgame.php?id=<?php echo $_GET["id"]; ?>"><button class="button" style="vertical-align:middle"><img src="media/buttons/pvpimage.png" height="80" width="110"></img><span>PVP</span></button></a>
+                     <a href="market.php?id=<?php echo $_GET["id"]; ?>"><button class="button" style="vertical-align:middle"><img src="media/buttons/marketimage.png" height="80" width="110"><span>MARKET</span></button></a>
+                     <a href="inventory.php?id=<?php echo $_GET["id"]; ?>"><button class="button" style="vertical-align:middle"><img src="media/buttons/inventoryimage.png" height="80" width="70"><span>INVENTORY</span></button></a>
                 </div>
             </div>
             <div class="sidebarhide"><a onclick="openNav()"><span class="sidenavarrow">❮</span></a></div>
@@ -128,8 +120,6 @@
                 </div>
             </div>
         </div>
-        
-        
         
     </body>
 </html>

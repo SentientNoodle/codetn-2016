@@ -1,3 +1,4 @@
+//Code to create questions in phpMyAdmin
 <?php
     include("../php/sqlconnect.php");
     
@@ -12,7 +13,13 @@
     $sql = $conn->prepare("INSERT INTO Questions (Question,Subject,Answer,Choices) VALUES (?,?,?,?);");
     $sql->bind_param("ssss",$question,$subject,$answer,$choices);
     $question = htmlspecialchars($_POST["dqcustomquestion"]);
-    $answer = htmlspecialchars($_POST["dqcustomanswer"]);
+    
+    if (!empty($_POST["dqcustomanswer"])) {
+        foreach($_POST["dqcustomanswer"] as $answerSequence) {
+            $answer .= $answerSequence;
+        }
+    }
+    
     $choices = htmlspecialchars(str_replace(',','&#44;',$_POST["0"])).','.htmlspecialchars(str_replace(',','&#44;',$_POST["1"])).','.htmlspecialchars(str_replace(',','&#44;',$_POST["2"])).','.htmlspecialchars(str_replace(',','&#44;',$_POST["3"]));
     $sql->execute();
     
