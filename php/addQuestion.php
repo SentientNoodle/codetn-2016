@@ -1,4 +1,4 @@
-//Code to create questions in phpMyAdmin
+// Create questions and stores questions in the database
 <?php
     include("../php/sqlconnect.php");
     
@@ -10,6 +10,7 @@
     $result = $result->fetch_assoc();
     $subject = $result["Subject"];
     
+    // Adds newly created questions into the questions table of the database 
     $sql = $conn->prepare("INSERT INTO Questions (Question,Subject,Answer,Choices) VALUES (?,?,?,?);");
     $sql->bind_param("ssss",$question,$subject,$answer,$choices);
     $question = htmlspecialchars($_POST["dqcustomquestion"]);

@@ -22,8 +22,13 @@
         header("Location: signup.php?exists=1");
         exit;
     } else {
-        $sql = $conn->prepare("INSERT INTO Users (SID,Firstname,Lastname,Password,isTeacher) VALUES (?,?,?,?,?);");
-        $sql->bind_param("ssssi",$sid,$firstname,$lastname,$password,$isteacher);
+        $sql = $conn->prepare("INSERT INTO Users (SID,Firstname,Lastname,Password,isTeacher,Currency) VALUES (?,?,?,?,?,?);");
+        $sql->bind_param("ssssii",$sid,$firstname,$lastname,$password,$isteacher,$currency);
+        if ($isteacher == 1) {
+            $currency = 0;
+        } else {
+            $currency = 1500;
+        }
         $sql->execute();
     }   
     

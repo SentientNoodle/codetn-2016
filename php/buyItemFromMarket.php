@@ -1,6 +1,23 @@
 <?php
     include ("../php/sqlconnect.php");
 
+    // Retreives User's Abililities
+    $sql = $conn->prepare("SELECT AbilityID FROM AbilitiesUsers WHERE UserID=?;");
+    $sql->bind_param("i",$userid);
+    $userid = $_SESSION["id"];
+    $sql->execute();
+    $result = $sql->get_result();
+    $buyerOwnedAbilitiesIndex = 0;
+    while ($row = $result->fetch_assoc()) {
+        $buyerOwnedAbilities[$buyerOwnedAbilitiesIndex] = $row["AbilityID"];
+        $buyerOwnedAbilitiesIndex++;
+    }
+    
+    // Make array not null
+    if (empty($buyerOwnedAbilities)) {
+        $buyerOwnedAbilities[0] = -1;
+    }
+
     // Select the seller and ability ids
     $sql = $conn->prepare("SELECT SellerID,AbilityID,Price FROM Market WHERE ID=?;");
     $sql->bind_param("i",$itemid);
@@ -15,13 +32,13 @@
     // Select the buyer's currency
     $sql = $conn->prepare("SELECT Currency FROM Users WHERE ID=?;");
     $sql->bind_param("i",$userid);
-    $userid = $_SESSION["id"];
     $sql->execute();
     $result = $sql->get_result();
     $result = $result->fetch_assoc();
     $buyerCurrency = $result["Currency"];
     
-    if ($buyerCurrency >= $price or $sellerid == $userid) {
+    if ($buyerCurrency >= $price and $sellerid != $userid and !(in_array($abilityid, $buyerOwnedAbilities))) {
+        
         // Select the seller's currency
         $sql = $conn->prepare("SELECT Currency FROM Users WHERE ID=?;");
         $sql->bind_param("i",$sellerid);
@@ -31,10 +48,11 @@
         $sellerCurrency = $result["Currency"];
     
         // Insert item into user's inventory
-        $sql = $conn->prepare("INSERT INTO AbilitiesUsers(UserID,AbilityID,Supply,Active) VALUES(?,?,?,?);");
-        $sql->bind_param("iiii",$userid, $abilityid, $supply, $active);
+        $sql = $conn->prepare("INSERT INTO AbilitiesUsers(UserID,AbilityID,Supply,Active,OnMarket) VALUES(?,?,?,?,?);");
+        $sql->bind_param("iiiii",$userid, $abilityid, $supply, $active,$onMarket);
         $supply = 20;
         $active = 0;
+        $onMarket = 0;
         $sql->execute();
         
         // Update buyer currency

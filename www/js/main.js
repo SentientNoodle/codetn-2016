@@ -1,49 +1,68 @@
 /*index.js*/
-function startAutoIndexSlide() {
-    var indexsse = 1;
-    autoIndexSlide();
-}
-
 function autoIndexSlide() {
-    if (indexsse == 1) {
-        document.getElementById("indexsse1").style.display = 'inline-block';
-        document.getElementById("indexsse2").style.display = 'none';
-        document.getElementById("indexsse3").style.display = 'none';
+    if (indexsseextended == 1) {
+        slideShowTimer = 15000;
+        indexsseextended = 0;
+    }
+    else if (indexsseextended == 0) {
+        if (indexsse == 1) {
+        document.getElementById("slideName").innerHTML = "[Website Name]";
+        document.getElementById("slideInfo").innerHTML = document.getElementById("slideInfo1").innerHTML;
+        document.getElementById("dot1").style.backgroundColor = "black";
+        document.getElementById("dot2").style.backgroundColor = "#bbb";
+        document.getElementById("dot3").style.backgroundColor = "#bbb";
+        slideShowTimer = 5000;
         indexsse = 2;
-    }
-    else if (indexsse == 2) {
-        document.getElementById("indexsse1").style.display = 'none';
-        document.getElementById("indexsse2").style.display = 'inline-block';
-        document.getElementById("indexsse3").style.display = 'none';
+        }
+        else if (indexsse == 2) {
+        document.getElementById("slideName").innerHTML = "Features";
+        document.getElementById("slideInfo").innerHTML = document.getElementById("slideInfo2").innerHTML;
+        document.getElementById("dot2").style.backgroundColor = "black";
+        document.getElementById("dot3").style.backgroundColor = "#bbb";
+        document.getElementById("dot1").style.backgroundColor = "#bbb";
+        slideShowTimer = 5000;
         indexsse = 3;
-    }
-    else if (indexsse == 3) {
-        document.getElementById("indexsse1").style.display = 'none';
-        document.getElementById("indexsse2").style.display = 'none';
-        document.getElementById("indexsse3").style.display = 'inline-block';
+        }
+        else if (indexsse == 3) {
+        document.getElementById("slideName").innerHTML = "Sign Up Now!";
+        document.getElementById("slideInfo").innerHTML = document.getElementById("slideInfo3").innerHTML;
+        document.getElementById("dot3").style.backgroundColor = "black";
+        document.getElementById("dot2").style.backgroundColor = "#bbb";
+        document.getElementById("dot1").style.backgroundColor = "#bbb";
+        slideShowTimer = 5000;
         indexsse = 1;
+        }
+        else {
+        document.getElementById("slideName").innerHTML = "ERROR";
+        document.getElementById("slideInfo").innerHTML = "ERROR";
+        }
     }
-    else {
-    }
-    setTimeout(autoIndexSlide, 5000);
+    
+    setTimeout(autoIndexSlide, slideShowTimer);
 }
 function indexsse1() {
     indexsse = 2;
-    document.getElementById("indexsse1").style.display = 'inline-block';
-    document.getElementById("indexsse2").style.display = 'none';
-    document.getElementById("indexsse3").style.display = 'none';
+    document.getElementById("slideName").innerHTML = "[Website Name]";
+    document.getElementById("slideInfo").innerHTML = document.getElementById("slideInfo1").innerHTML;
+    document.getElementById("dot1").style.backgroundColor = "black";
+    document.getElementById("dot2").style.backgroundColor = "#bbb";
+    document.getElementById("dot3").style.backgroundColor = "#bbb";
 }
 function indexsse2() {
     indexsse = 3;
-    document.getElementById("indexsse1").style.display = 'none';
-    document.getElementById("indexsse2").style.display = 'inline-block';
-    document.getElementById("indexsse3").style.display = 'none';
+    document.getElementById("slideName").innerHTML = "Features";
+    document.getElementById("slideInfo").innerHTML = document.getElementById("slideInfo2").innerHTML;
+    document.getElementById("dot2").style.backgroundColor = "black";
+    document.getElementById("dot3").style.backgroundColor = "#bbb";
+    document.getElementById("dot1").style.backgroundColor = "#bbb";
 }
 function indexsse3() {
     indexsse = 1;
-    document.getElementById("indexsse1").style.display = 'none';
-    document.getElementById("indexsse2").style.display = 'none';
-    document.getElementById("indexsse3").style.display = 'inline-block';
+    document.getElementById("slideName").innerHTML = "Sign Up Now!";
+    document.getElementById("slideInfo").innerHTML = document.getElementById("slideInfo3").innerHTML;
+    document.getElementById("dot3").style.backgroundColor = "black";
+    document.getElementById("dot2").style.backgroundColor = "#bbb";
+    document.getElementById("dot1").style.backgroundColor = "#bbb";
 }
 /*about.js*/
 function showFeatures() {
@@ -147,14 +166,32 @@ function showActive() {
     document.getElementById("stuffbackground").style.display = 'none';
 }
 /*pvp.js*/
-function send(value) {
-    $.ajax({
-        url: "../../php/pvp.php",
-        type: "POST",
-        data: {ability: value}
-    });
+function timer(t) {
+    setTimeout(function(){timer(t);}, 100);
+    // JavaScript's time is in miliseconds and is one second fast of PHP's
+    t.innerHTML = startTime - Math.floor(Date.now() / 1000 - 1) + 60;
+    if (t.innerHTML <= 0) {
+        checkTurn();
+    }
 }
 
+function checkTurn() {
+    $.ajax({
+        url: "../ajax/checkTurn.php",
+        type: "post",
+        success: function(data) {
+            if (data == "reload") {
+                window.location.href = "pvp.php?reload=1";
+            } else if (data == "redirect") {
+                window.location.href = "index.php";
+            }
+        },
+        error: function(data) {
+            setTimeout(checkTurn(), 3000);
+        },
+        async: true
+    });
+}
 /*
 emotes = document.getElementsByClassName("emote");
 for (var i=0; i<emotes.length(); i++) {

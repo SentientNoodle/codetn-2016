@@ -1,7 +1,7 @@
 <?php
     include("../php/sqlconnect.php");
     
-    //Base code to get data from phpMyAdmin
+    // Selects data from databse for use in the rest of the document
     $sql = $conn->prepare("SELECT Answered FROM ClassesUsers WHERE UserID=? AND ClassID=?;");
     $sql->bind_param("ii",$userid,$classid);
     $userid = $_SESSION["id"];
@@ -21,7 +21,7 @@
     
     if ($answered == 0) {
         
-        //Code if user has not answered the question since the last reset
+        // Database code for if the user has not answered the question
         $sql = $conn->prepare("UPDATE ClassesUsers SET Answered=1 WHERE UserID=?;");
         $sql->bind_param("i",$userid);
         $sql->execute();
@@ -43,7 +43,7 @@
         
         if ($answer === $userAnswers) {
         
-            //Code to reward the user with currecny for correctly answering the question
+            // Rewards user by adding stuff to their user in the database
             $newCurrency = $currency + 5;
             $sql = $conn->prepare("UPDATE Users SET Currency=? WHERE ID=?;");
             $sql->bind_param("ii", $newCurrency, $userid);
@@ -51,12 +51,12 @@
             $qOutput = 'Correct!<br>You got 5 stuff!';
         } else {
         
-            //Punish user with demotivational comments for failing to complete a basic task
+            // Punishes user with demotivational comments for failing to complete a basic task
             $qOutput = 'Incorrect!<br>You\'re a bad person!';
         }
     } else {
     
-        //Keep user from repetitively answering questions
+        // Keep user from repetitively answering questions
         $qOutput = 'You already answered this question!';
     }
 ?>

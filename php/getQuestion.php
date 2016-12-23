@@ -3,7 +3,7 @@
     
     if ($_SESSION["isTeacher"] == 0) {
        
-        //Code for the student to answer questions set by the teacher
+        // Let's the student enter data into the database to answer the question
         $sql = $conn->prepare("SELECT Question FROM Classes WHERE ID=?;");
         $sql->bind_param("i",$classid);
         $classid = $_GET["id"];
@@ -22,7 +22,7 @@
             
             if ($result["Answered"] == 0) {
             
-            //Code for the actuall answering of the question
+            // Sends answer chosen by student into the database
                 $sql = $conn->prepare("SELECT Questions.Question,Choices,Answer FROM Questions JOIN Classes ON Questions.ID=Classes.Question WHERE Classes.ID=?;");
                 $sql->bind_param("i", $classid);
                 $sql->execute();
@@ -37,7 +37,7 @@
                 
                 $answerLength = strlen($_SESSION["answers"]);
             
-                //Code to determine if answer is to have single or multiple correct answers
+                // Checks to see how many possible correct answers there are
                 if ($answerLength == 1) {
                     $isRadioButton = 1;
                 } else {
@@ -46,7 +46,7 @@
                 
                 if ($isRadioButton == 0) {
                     
-                    //Code to answer a question with multiple correct answers
+                    // Form to answer a question with multiple correct answers 
                     echo '
                         <form action="class.php?id='.$classid.'" method="post">
                             <div class="input-group">
@@ -60,7 +60,7 @@
                     ';
                 } else if ($isRadioButton == 1) {
                     
-                    //Code to answer a question with one correct answers
+                    // Form to answer a question with one correct answer
                     echo '
                         <form action="class.php?id='.$classid.'" method="post">
                             <div class="input-group">
@@ -74,7 +74,7 @@
                     ';
                 }
         
-        //Code for if question is not to be answered    
+        // Options for if the user has already answered or if no question is available
             } else {
                 if (empty($qOutput)) {
                     $qOutput = 'You already answered this question!';
@@ -88,10 +88,10 @@
             echo $qOutput;
         }
     
-    //Code for teacher to set question    
+    // Options for teacher to set current question 
     } else {
         
-        //Code for teacher to create their own question
+        // Option to create their own question and set it as the current question
         if ($_POST["question"] != "custom") {
             $sql = $conn->prepare("SELECT Questions.Question,Choices,Answer,Questions.ID FROM Questions JOIN Classes ON Questions.Subject=Classes.Subject WHERE Classes.ID=? ORDER BY rand();");
             $sql->bind_param("i", $classid);
@@ -140,7 +140,7 @@
                 </form>
             ';
         
-        //Code for teacher to select an existing question
+        // Option to set an existing question as the active qestion
         } else {
             echo '
                 <form action="class.php?id='.$_GET["id"].'" method="post">

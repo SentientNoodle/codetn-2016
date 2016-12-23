@@ -185,15 +185,9 @@
                     <div class="positioninfocol">
                         <div class="abilitiesbeingused">
                             <p style="margin-left:2%; margin-top:10%"><font color="white" size="3"><b>Abilities Being Used:</b> </p>
-                            <div class="slot" style="margin-left:1%; margin-right:1%; width:28%; height:85%; vertical-align:top; margin-bottom:1%">
-                            </div>
-                            <div class="slot" style="margin-right:1%; width:28%; height:85%; vertical-align:top;">
-                            </div>
-                            <br>
-                            <div class="slot" style="margin-right:1%; width:28%; height:85%; vertical-align:top;">
-                            </div>
-                            <div class="slot" style="margin-right:1%; width:28%; height:85%; vertical-align:top;">
-                            </div>
+                            <?php
+                                include("../php/getUserActiveAbilities.php");
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -207,57 +201,10 @@
                     <button class="positionpage">←</button>
                     <p style="display:inline-block; margin-left:19%"><font color="white"><b>PAGE <!-- CURRENT PAGE # HERE -->0/0<!-- TOTAL PAGE # HERE --></b></font></p>
                     <button style="margin-left:19%; background-color:silver; color:black; font-weight:bold;">→</button>
-                    <div class="slotbackground">
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
-                        <div class="slot">
-                        </div>
+                    <div class="slotbackground" style="width:60%">
+                        <?php
+                            include("../php/getInventoryAbilities.php");
+                        ?>
                     </div>
                 </div>
                 

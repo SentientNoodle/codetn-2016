@@ -9,8 +9,10 @@
     
     $opponentid = $result["OpponentID"];
     
-    $sql = $conn->prepare("UPDATE Games SET UserReady=1 WHERE ID=?;");
-    $sql->bind_param("i",$gameid);
+    $sql = $conn->prepare("UPDATE Games SET UserReady=1,Turn=?,Timer=? WHERE ID=?;");
+    $sql->bind_param("iii",$userid,$timer,$gameid);
+    $userid = $_SESSION["id"];
+    $timer = time();
     $sql->execute();
     
     $_SESSION["gameid"] = $gameid;

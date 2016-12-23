@@ -17,7 +17,7 @@
         if (!empty($_POST["question"]) and ($_POST["question"] != "custom" or $_POST["question"] != "select")) {
             include("../php/setQuestion.php");
         } else if (!empty($_POST["dqcustomquestion"])) {
-            include("../php/addQuestion.php");
+            include("../php/addQuestion.php"); 
         } else if (!empty($_POST["news"])) {
             include("../php/updateNews.php");
         }

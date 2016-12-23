@@ -40,64 +40,78 @@
                 <!-- FEATURES -->
                 <div id="positionFeatures" style="display:none">
                     <div class="features" style="margin-top:2%;">
-                        <div class="aboutPicture" id="aboutpvp"></div>
+                        <div class="aboutPicture" style="background-image:url('../media/features/pvpimage.png')"></div>
                         <div class="aboutText">
                             <p style="font-size:150%;font-weight:bold;color:white;text-align:center">PVP COMBAT SYSTEM</p>
+                            <p style="font-size:125%;font-weight:bold;color:white;text-align:center">Fight Other Students In A Fun Battle System</p>
                         </div>
                     </div>
                     <div class="features" style="margin-top:2%;">
-                        <div class="aboutPicture">NEED PIC</div>
+                        <div class="aboutPicture" style="background-image:url('../media/features/peerinteractionimage.png')"></div>
                         <div class="aboutText">
-                            <p style="font-size:150%;font-weight:bold;color:white;text-align:center">TRADE SYSTEM<!-- Do we have a trade system? --></p>
+                            <p style="font-size:150%;font-weight:bold;color:white;text-align:center">PEER INTERACTION</p>
+                            <p style="font-size:125%;font-weight:bold;color:white;text-align:center">Interact With Other Students Throught The Site</p>
                         </div>
                     </div>
                     <div class="features" style="margin-top:2%;">
-                        <div class="aboutPicture">NEED PIC</div>
+                        <div class="aboutPicture" style="background-image:url('../media/features/marketimage.png');background-size:150%90%;background-position:50%65%"></div>
                         <div class="aboutText">
                             <p style="font-size:150%;font-weight:bold;color:white;text-align:center">PLAYER MARKET SYSTEM</p>
+                            <p style="font-size:125%;font-weight:bold;color:white;text-align:center">Buy And Sell To Peers On The Market</p>
                         </div>
                     </div>
                     <div class="features">
-                        <div class="aboutPicture"></div>
+                        <div class="aboutPicture" style="background-image:url('../media/features/cosmeticsimage.png')"></div>
                         <div class="aboutText">
                             <p style="font-size:150%;font-weight:bold;color:white;text-align:center">COSMETICS</p>
+                            <p style="font-size:125%;font-weight:bold;color:white;text-align:center">Obtain Cosmetics To Make Your Character Look Nicer</p>
                         </div>
                     </div>
                     <div class="features">
-                        <div class="aboutPicture"></div>
+                        <div class="aboutPicture" style="background-image:url('../media/features/inventoryimage.png')"></div>
                         <div class="aboutText">
                             <p style="font-size:150%;font-weight:bold;color:white;text-align:center">INVENTORY</p>
+                            <p style="font-size:125%;font-weight:bold;color:white;text-align:center">Hold Items That Boost Your Character</p>
                         </div>
                     </div>
                     <div class="features">
-                        <div class="aboutPicture"></div>
+                        <div class="aboutPicture" style="background-image:url('../media/features/dailyquestion.png')"></div>
                         <div class="aboutText">
                             <p style="font-size:150%;font-weight:bold;color:white;text-align:center">DAILY QUESTION</p>
+                            <p style="font-size:125%;font-weight:bold;color:white;text-align:center">Answer A Daily Question For Rewards</p>
                         </div>
                     </div>
                     <div class="features">
-                        <div class="aboutPicture"></div>
+                        <div class="aboutPicture" style="background-image:url('../media/features/classcompatimage.png')"></div>
                         <div class="aboutText">
-                            <p style="font-size:150%;font-weight:bold;color:white;text-align:center">JOIN A CLASS</p>
+                            <p style="font-size:150%;font-weight:bold;color:white;text-align:center">COMPATIBLE WITH ANY CLASS</p>
+                            <p style="font-size:125%;font-weight:bold;color:white;text-align:center">Use This Site For Any And All Classes</p>
                         </div>
                     </div>
                     <div class="features">
-                        <div class="aboutPicture"></div>
+                        <div class="aboutPicture" style="background-image:url('../media/features/abilitiesimage.png')"></div>
                         <div class="aboutText">
                             <p style="font-size:150%;font-weight:bold;color:white;text-align:center">ABILITIES</p>
+                            <p style="font-size:125%;font-weight:bold;color:white;text-align:center">Use Abilities To Combat Other Players And Boost Your Strength</p>
                         </div>
                     </div>
                     <div class="features">
-                        <div class="aboutPicture"></div>
+                        <div class="aboutPicture" style="background-image:url('../media/features/healthmanaimage.png')"></div>
                         <div class="aboutText">
                             <p style="font-size:150%;font-weight:bold;color:white;text-align:center">MANA AND HEALTH SYSTEM</p>
+                            <p style="font-size:125%;font-weight:bold;color:white;text-align:center">Use Mana And Health To Carry On Your Combat</p>
                         </div>
                     </div>
                 </div>
                 <!-- ABOUT WEB -->
                 <div id="positionAboutWeb" style="display:none">
                     <div class="aboutWeb">
-                        <p style="font-size:150%;color:white;margin-left:1%">THIS WEBSITE IS ABOUT STUFF AND BLAH AND YEAH</p>
+                        <p style="font-size:300%;color:white;margin-left:.5%;font-weight:bold;text-align:center;margin-top:5%">
+                            "site name" is a site to promote the communication and interaction with a class and students, with an interactive market and a fun pvp.
+                            Another feature is a clothes system, where a user may improve the way they look. Users may interact with other students for class reasons, 
+                            such as study questions. They can then battle each other for fun, promoting interaction between students. Users interacting with the market
+                            can learn skills with trading and money management.
+                        </p>
                     </div>
                 </div>
                 <!-- ABOUT US -->
@@ -157,8 +171,9 @@
                         <div class="aboutText">
                             <p style="font-weight:bold;font-size:175%;color:white" align="center">ANDREW</p>
                             <p style="font-size:150%;color:white;margin-left:1%" align="center">Freshman at Hardin Valley Academy</p>
-                            <p style="font-size:150%;color:white;margin-left:1%" align="center">Wait, who's andrew</p></p>
-                            <p style="font-size:150%;color:white;margin-left:1%" align="center">Kid does so little we don't even know him?</p>
+                            <p style="font-size:150%;color:white;margin-left:1%" align="center">Found pictures and learned.</p>
+                            <p style="font-size:150%;color:white;margin-left:1%" align="center">HTML</p>
+                            <p style="font-size:150%;color:white;margin-left:1%" align="center">Front End Team</p>
                         </div>
                     </div>
                 </div>

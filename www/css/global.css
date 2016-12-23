@@ -6,49 +6,42 @@ body {
     background-position: center bottom;
     height: 100vh;
 }
+/*bootstrap css*/
+.jumbotron {
+    background-color: white;
+    opacity: .8;
+    transition: opacity 1s;
+    height: 33%;
+}
+.jumbotron:hover {
+    opacity: 1;
+}
 /*global.css*/
 .nav li:hover {
     background-color: #EFEFEF;
     border-style: none;
     border-radius: 8px;
 }
-
 #userbox {
     border: 2px solid #777777;
     border-radius: 8px;
 }
-
 /*index.css*/
-.indexbanner {
-    width: 100%;
-    height: 35%;
-    background-color: white;
-    opacity: .8125;
-    transition: opacity 1s;
+.panel-orange {
+    border-color: #f4511e;
 }
-.indexbanner:hover {
-    opacity: 1.0;
+.panel-orange > .panel-heading {
+    color: white;
+    background-color: #f4511e;
+    border-color: white;
 }
-.indexbannerstuff {
-    height: 100%;
-    width: 25%;
-    display: inline-block;
-    vertical-align: top;
-    background-size: 100% 100%;
+#slideName {
+    text-align: center;
+    font-size: 150%;
 }
-.indexslideshow {
-    height: 54%;
-    width: 50%;
-    background-color: gray;
-    border: 3px solid black;
-}
-.indexslideshowentry {
-    height: 95%;
-    width: 100%;
-}
-.indexslideshowbutton {
-    height: 5%;
-    width: 100%;
+#slideInfo {
+    text-align: center;
+    font-size: 150%;
 }
 .dot {
   height: 13px;
@@ -58,6 +51,9 @@ body {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+.dot:hover {
+  background-color: black;
 }
 /*class.css*/
 .newsbackground {
@@ -262,12 +258,9 @@ pre {
     border: none;
 }
 /*contact.css*/
-.sideBar {
-    height: 100%;
-    width: 20%;
-    border-right: 3px double gray;
-    display: inline-block;
-    vertical-align: top;
+#contacttext {
+    font-weight: bold;
+    color: black;
 }
 /*about.css*/
 #positionall {
@@ -330,7 +323,6 @@ pre {
     width: 35%;
     margin-top: .5%;
     margin-left: 1%;
-    background-color: red;
     display: inline-block;
     float: left;
     background-repeat: no-repeat;
@@ -342,12 +334,8 @@ pre {
     margin-right: 1%;
     margin-left: .5%;
     margin-top: .5%;
-    background-color: blue;
     display: inline-block;
     float: right;
-}
-#aboutpvp {
-    background-image: url("../media/buttons/pvpimage.png");
 }
 /*findgame.css*/
 .pvpbanner {
@@ -459,13 +447,24 @@ pre {
 }
 
 /*pvp.css*/
-.Battleground {
-     height: 55%;
-    width: 100%;
+.pvp-body{
+    height: 100vh;
+    padding: 0px;
+    min-width: 300px;
+    overflow-x: hidden;
+}
+.battleground {
+    height: calc(50% - 55px);
+}
+.timer {
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    text-align: center;
 }
 .character {
     height: 100%;
-    width: 21%;
     display: inline-block;
     background-image: url("../media/character.png");
     background-repeat: no-repeat;
@@ -475,142 +474,138 @@ pre {
 #pvpopponent {
     background-image: url("../media/pvpcharacter.png");
 }
-#pvpyou {
+#pvpuser {
     background-image: url("../media/pvpcharacter.png");
 }
 .stats {
     height: 100%;
-    width: 30%;
-    display: inline-block;
-    vertical-align: top;
 }
-#positionLeftSide {
-    width: 21%;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-}
-#positionRightSide {
-    width: 21%;
-    height: 100%;
-    display: inline-block;
-    position: relative;
-}
-#gameOptions {
-    width: 100%;
-    height: 10%;
-}
-.settingsButton {
-    display: inline-block;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
-    width: 17%;
-    height: 100%;
-}
-.settingsButton:hover {
-    background-color: #555555;
-    color: white;
-}
-#emotes {
-    width: 100%;
-    height: 55%;
-    position: absolute;
-}
-#emoteText {
-    font-size:200%;
-    font-weight:bold;
-    color:black;
-    transform:rotate(180deg);
-    text-align:center;
-    vertical-align:middle;
-    line-height:120px
-}
-.emoteBubble {
-    width: 100%;
-    height: 50%;
-    background-image: url("../media/emotebubble.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    opacity: 1;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-.emoteButton {
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
-    width: 50%;
-    height: 19%;
-}
-.emoteButton:hover {
-    background-color: #555555;
-    color: white;
-}
-.nameTag {
-    text-align: center;
-    font-weight: bold;
-    display: inline-block;
-    font-size: 16px;
-    background-color: white;
-    color: black;
-    border: 2px solid #555555;
-    width: 74.8%;
-    height: 9%;
-    vertical-align: top; 
-}
-.redButton {
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    border: 2px solid #f44336;
-    width: 24.25%;
-    height: 9%;
-    vertical-align: top;
-}
-.redButton:hover {
-    background-color: #f44336;
-    color: white;
-}
-.health {
+/*#positionLeftSide {*/
+/*    width: 21%;*/
+/*    height: 100%;*/
+/*    display: inline-block;*/
+/*    position: relative;*/
+/*}*/
+/*#positionRightSide {*/
+/*    width: 21%;*/
+/*    height: 100%;*/
+/*    display: inline-block;*/
+/*    position: relative;*/
+/*}*/
+/*#gameOptions {*/
+/*    width: 100%;*/
+/*    height: 10%;*/
+/*}*/
+/*.settingsButton {*/
+/*    display: inline-block;*/
+/*    -webkit-transition-duration: 0.4s;*/
+/*    transition-duration: 0.4s;*/
+/*    cursor: pointer;*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*    border: 2px solid #555555;*/
+/*    width: 17%;*/
+/*    height: 100%;*/
+/*}*/
+/*.settingsButton:hover {*/
+/*    background-color: #555555;*/
+/*    color: white;*/
+/*}*/
+/*#emotes {*/
+/*    width: 100%;*/
+/*    height: 55%;*/
+/*    position: absolute;*/
+/*}*/
+/*#emoteText {*/
+/*    font-size:200%;*/
+/*    font-weight:bold;*/
+/*    color:black;*/
+/*    transform:rotate(180deg);*/
+/*    text-align:center;*/
+/*    vertical-align:middle;*/
+/*    line-height:120px*/
+/*}*/
+/*.emoteBubble {*/
+/*    width: 100%;*/
+/*    height: 50%;*/
+/*    background-image: url("../media/emotebubble.png");*/
+/*    background-size: 100% 100%;*/
+/*    background-repeat: no-repeat;*/
+/*    position: absolute;*/
+/*    opacity: 1;*/
+/*    -webkit-transition-duration: 0.4s;*/
+/*    transition-duration: 0.4s;*/
+/*}*/
+/*.emoteButton {*/
+/*    text-align: center;*/
+/*    display: inline-block;*/
+/*    font-size: 16px;*/
+/*    -webkit-transition-duration: 0.4s;*/
+/*    transition-duration: 0.4s;*/
+/*    cursor: pointer;*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*    border: 2px solid #555555;*/
+/*    width: 50%;*/
+/*    height: 19%;*/
+/*}*/
+/*.emoteButton:hover {*/
+/*    background-color: #555555;*/
+/*    color: white;*/
+/*}*/
+/*.nameTag {*/
+/*    text-align: center;*/
+/*    font-weight: bold;*/
+/*    display: inline-block;*/
+/*    font-size: 16px;*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*    border: 2px solid #555555;*/
+/*    width: 74.8%;*/
+/*    height: 9%;*/
+/*    vertical-align: top; */
+/*}*/
+/*.redButton {*/
+/*    text-align: center;*/
+/*    display: inline-block;*/
+/*    font-size: 16px;*/
+/*    -webkit-transition-duration: 0.4s;*/
+/*    transition-duration: 0.4s;*/
+/*    cursor: pointer;*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*    border: 2px solid #f44336;*/
+/*    width: 24.25%;*/
+/*    height: 9%;*/
+/*    vertical-align: top;*/
+/*}*/
+/*.redButton:hover {*/
+/*    background-color: #f44336;*/
+/*    color: white;*/
+/*}*/
+.statbar {
     height: 10%;
     width: 100%;
     background-color: white;
     margin-top: 1%;
     border: 2px solid #555555;
 }
-.mana {
-    height: 10%;
-    width: 100%;
-    background-color: white;
-    margin-top: 1%;
-    border: 2px solid #555555;
+.healthlvl {
+    height: 100%;
+    background-color: red;
+    overflow-x: visible;
+}
+.manalvl {
+    height: 100%;
+    background-color: blue;
+    overflow-x: visible;
 }
 .abilities {
-    height: 65%;
-    width: 100%;
-    display: inline-block;
-    margin-top: 3%;
+    height: 100%;
     vertical-align:top;
 }
 .ability {
     text-align: center;
-    display: inline-block;
     font-size: 16px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -618,32 +613,78 @@ pre {
     background-color: white;
     color: black;
     border: 2px solid #555555;
-    width: 24.25%;
     height: 100%;
-    vertical-align: top;
 }
 .ability:hover {
     background-color: #555555;
     color: white;
 }
 .abilityImage {
-    height: 35%;
     width: 100%;
-    margin-bottom: 3%;
+    height: auto;
 }
 .abilityText {
-    height: 35%;
     width: 100%;
-    margin-bottom: 2%;
+    height: 35%;
 }
 .abilityDamage {
-    height: 7%;
     width: 100%;
-    margin-bottom: 2%;
+    height: 15%;
 }
-.abilityUses {
-    height: 7%;
-    width: 100%;
+/*.abilityUses {*/
+/*    height: 7%;*/
+/*    width: 100%;*/
+/*}*/
+@media only screen and (max-width: 992px) {
+    .pvp-body {
+        height: 100%;
+    }
+    .abilities {
+        height: 50%;
+    }
+    .abilityImage {
+        height: 80%;
+        width: 100%;
+    }
+    .abilityImage>img {
+        height: 100%;
+        width: auto;
+    }
+    .abilityText {
+        display: none;
+    }
+    .userbox {
+        height: 50%;
+    }
+    .statbar {
+        height: 25%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .character {
+        display: none;
+    }
+    .ability {
+        padding: 0px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .battleground {
+        padding: 0px;
+    }
+    .userbox {
+        padding: 0px;
+    }
+    .stats {
+        padding: 0px;
+    }
+    .abilities {
+        padding: 0px;
+    }
+    .abilityImage>img {
+        width: 100%;
+        height: auto;
+    }
 }
 /*market.css*/
 .positionmarket {
@@ -698,7 +739,7 @@ pre {
     width: 100%;
 }
 .marketentry {
-    height: 18%;
+    height: 20%;
     width: 100%;
     background-color: white;
     opacity: .7;
@@ -762,11 +803,21 @@ pre {
     display: inline-block;
     width: 90%;
 }
-.mana {
+/* You're using the same class names here and in pvp 
+
+######################################
+
+######################################
+
+######################################
+
+######################################
+*/
+.inv-mana {
     background-color: blue;
     width: 100%;
 }
-.health {
+.inv-health {
     background-color: red;
     width: 100%;
 }
@@ -812,6 +863,36 @@ pre {
 .market-slot:hover {
     display: inline-table;
 }
+.inventory-slot {
+    width: 30%;
+    height: 30%;
+    display: inline-block;
+    vertical-align: top;
+    overflow-y: hidden;
+    margin-left: 1%;
+    margin-top: 1.5%;
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+}
+.inventory-slot:hover {
+    display: inline-table;
+}
+.activeAbilities-slot {
+    width: 30%;
+    height: 50%;
+    display: inline-block;
+    vertical-align: top;
+    overflow-y: hidden;
+    margin-left: 1%;
+    margin-top: 1.5%;
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+}
+.activeAbilities-slot:hover {
+    display: inline-table;
+}
 .abilitiesbeingused {
     height: 40%;
     width: 100%;
@@ -828,12 +909,21 @@ pre {
 }
 
 /*signup.css*/
-.signup-input {
-    width: 15%;
+.signupForm input {
+    width: 100%;
+}
+
+.signupForm h3 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.radio-inline {
+    margin-left: -47px;
 }
 
 .passStrengthBox {
-    width: 20%;
+    width: 100%;
 }
 
 meter {
@@ -848,3 +938,7 @@ meter[value="1"]::-webkit-meter-optimum-value {background: red;}
 meter[value="2"]::-webkit-meter-optimum-value {background: orange;}
 meter[value="3"]::-webkit-meter-optimum-value {background: yellow;}
 meter[value="4"]::-webkit-meter-optimum-value {background: green;}
+
+/*settings.css*/
+
+/*contact.css*/

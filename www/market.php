@@ -3,12 +3,14 @@
     
     include("../php/sqlconnect.php");
     
+    // Resets session if the user is not signed in
     if ($_GET["signout"] == "1") {
         session_unset();
         header("Location: index.php");
         exit;
     }
     
+    // Includes pages needed to buy/sell on market if user is signed in
     if (!empty($_POST["abilityid"])) {
         include("../php/addItemToMarket.php");
     } elseif (!empty($_POST["itemid"])) {

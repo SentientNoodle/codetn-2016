@@ -9,6 +9,8 @@
     $result = $sql->get_result();
     
     $users = '';
+    
+    // When you press the button, it retreives information about user from the database
     while ($row = $result->fetch_assoc()) {
         $users .= '
             <button type="submit" class="request" name="user" value="'.$row["ID"].'"><span>'.$row["FirstName"].' '.$row["LastName"].'</span></button>

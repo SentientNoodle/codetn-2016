@@ -44,7 +44,7 @@
                     <p style="margin-left:1%"><font color="white" size="5"><b>Estimated Time: <!-- Get estimated time it will take to get in queue --></b></font></p>
                 </div>
             </div>
-            <div class="character">
+            <div class="character" style="width:35%;margin-left:2.5%;background-color:black;opacity:.8">
             </div>
             <div class="positionbattlerequests">
                 <p style="text-align:center"><font color="black" size="50"><b>Battle Request</b></font></p>

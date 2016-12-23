@@ -3,6 +3,8 @@
         Any css you want to apply to the navbar must be written in global.css
         ---------------------------------------------------------------------
     */
+    
+    include("../php/sqlconnect.php");
 
     // Highlights correct tab in navbar
     $pages = array("","",""); // # of items in array must = # of tabs in nav
@@ -29,7 +31,7 @@
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Settings</a></li>
+                            <li><a href="settings.php">Settings</a></li>
                             <li id="signout"><a href="index.php?signout=1"><span class="glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;Sign Out</a></li> 
                         </ul>
                     </li>
@@ -59,40 +61,89 @@
                     }
                 }
                 
-                return '
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Classes<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            '.
-                            $classes
-                            .'
-                        </ul>
-                    </li>';
+                if ($_SESSION["isTeacher"] == 0) {
+                    return '
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Classes<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                '.
+                                $classes
+                                .'
+                                <li><a href="joinclass.php">Join a Class</a></li>
+                            </ul>
+                        </li>';
+                } elseif ($_SESSION["isTeacher"] == 1) {
+                    return '
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Classes<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                '.
+                                $classes
+                                .'
+                                <li><a href="makeclass.php">Create a Class</a></li>
+                            </ul>
+                        </li>';
+                }
             }
         }
     }
 
-    echo '
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#colNav">
-                        <span class="glyphicon glyphicon-menu-hamburger"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.php">We need a name for this site still</a>
+    $sql = $conn->prepare("SELECT Code FROM Classes WHERE ID=?;");
+    $sql->bind_param("i", $classid);
+    $classid = $_GET["id"];
+    $sql->execute();
+    $result = $sql->get_result();
+    $result = $result->fetch_assoc();
+    $classCode = $result["Code"];
+
+    if ($_SESSION["isTeacher"] == 1) {
+        echo '
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#colNav">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.php">We need a name for this site still</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="colNav">
+                        <ul class="nav navbar-nav">
+                            <li'.$pages[0].'><a href="index.php">Home</a></li>
+                                '.userData("classes").'
+                            <li'.$pages[2].'><a href="about.php">About</a></li>
+                            <li'.$pages[3].'><a href="contact.php">Contact</a></li>
+                            Your Current Class Code is: '.$classCode.'
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right" id="userbox">
+                            '.userData("userbox").'
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="colNav">
-                    <ul class="nav navbar-nav">
-                        <li'.$pages[0].'><a href="index.php">Home</a></li>
-                            '.userData("classes").'
-                        <li'.$pages[2].'><a href="about.php">About</a></li>
-                        <li'.$pages[3].'><a href="contact.php">Contact</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right" id="userbox">
-                        '.userData("userbox").'
-                    </ul>
+            </nav>
+            ';
+    } else {
+                echo '
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#colNav">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.php">We need a name for this site still</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="colNav">
+                        <ul class="nav navbar-nav">
+                            <li'.$pages[0].'><a href="index.php">Home</a></li>
+                                '.userData("classes").'
+                            <li'.$pages[2].'><a href="about.php">About</a></li>
+                            <li'.$pages[3].'><a href="contact.php">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right" id="userbox">
+                            '.userData("userbox").'
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-        ';
+            </nav>
+            ';
+    }
 ?>
