@@ -33,7 +33,8 @@
         
     <div class="jumbotron">
         <div class="container text-center">
-            <h1 style="font-weight:bold">[WEBSITE NAME]</h1>
+    <!--        <h1 style="font-weight:bold">SCHOLARLY FISTICUFFS</h1> -->
+            <img src="../media/features/logo.png" id="logo" height="auto" width="auto">
         </div>
     </div>
         
@@ -42,13 +43,13 @@
             <div class="col-sm-10 col-sm-offset-1">
                 <div class="panel panel-orange">
                     <div class="panel-heading">
-                        <div id="slideName">null</div>
+                        <div id="slideName">ERROR: No slide name found.</div>
                     </div>
                     <div class="panel-body" style="height:450px;overflow-y:auto;">
-                        <div id="slideInfo">null</div>
+                        <div id="slideInfo">ERROR: No slide info found.</div>
                         <!-- Info -->
                         <p id="slideInfo1" style="display:none">
-                            "site name" is a site to promote the communication and interaction with a class and students, with an interactive market and a fun pvp.
+                            SCHOLARLY FISTICUFFS is a site to promote the communication and interaction with a class of students, with an interactive market and a fun pvp.
                             Another feature is a clothes system, where a user may improve the way they look. Users may interact with other students for class reasons, 
                             such as study questions. They can then battle each other for fun, promoting interaction between students. Users interacting with the market
                             can learn skills with trading and money management.

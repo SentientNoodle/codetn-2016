@@ -1,4 +1,0 @@
-"site name" is a site to promote the communication and interaction with a class and students, with an interactive market and a fun pvp.
-Another feature is a clothes system, where an user may improve the way they look. Users may interact with other students for class reasons, 
-such as study questions. They can then battle eachother for fun, promoting interaction between students. Users interacting with the market
-can learn skills with 

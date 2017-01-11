@@ -7,10 +7,16 @@
             $page = "findgame";
             include("../php/head.php");
             //Code for finding games, see acceptGame.php and sendGame.php respectively 
-            if (!empty($_POST["request"])) {
+            if (!empty($_POST["accept"])) {
                 include("../php/acceptGame.php");
+            } else if (!empty($_POST["decline"])) {
+                include("../php/declineGame.php");
             } else if (!empty($_POST["user"])) {
                 include("../php/sendGame.php");
+            } else if (!empty($_POST["activeabilityid"])) {
+                include("../php/unsetActiveAbility.php");
+            } else if (!empty($_POST["abilityid"])) {
+                include("../php/setActiveAbility.php");
             }
             
             $imagesfindgame = array("findgameback1.jpg","findgameback2.jpg","findgameback3.jpg");
@@ -28,28 +34,29 @@
             check();
         </script>
     </head>
-    <body>
+    <body class="findgame-body">
         <?php
             include("../php/navbar.php");
         ?>
-        
-        <div class="pvpbanner"></div>
-        
         <div class="positionall">
-            <div class="positionrandombattle">
-                <p style="text-align:center"><font color="black" size="50"><b>Random Battle</b></font></p>
-                <div class="randombattle">
-                    <a href="pvp.php"><button class="button" style="vertical-align:middle"><img src="media/buttons/pvpimage.png" height="70" width="90"></img>QUEUE UP<span><img src="media/buttons/pvpimage.png" height="70" width="90"></img></span></button></a>
-                    <p style="margin-left:1%"><font color="white" size="5"><b># Of People In Queue: <!-- Get # of people in queue here --></b></font></p>
-                    <p style="margin-left:1%"><font color="white" size="5"><b>Estimated Time: <!-- Get estimated time it will take to get in queue --></b></font></p>
+            <div class="ability-select col-md-6">
+                <div class="findgame-active-abilities">
+                    <h3 style="color:white;">Active Abilities</h3>
+                    <?php
+                        include("../php/getFindgameActiveAbilities.php");
+                    ?>
+                </div>
+                <hr>
+                <div class="findgame-abilities">
+                    <h3 style="color:white;">Abilities</h3>
+                    <?php
+                        include("../php/getFindgameAbilities.php");
+                    ?>
                 </div>
             </div>
-            <div class="character" style="width:35%;margin-left:2.5%;background-color:black;opacity:.8">
-            </div>
-            <div class="positionbattlerequests">
-                <p style="text-align:center"><font color="black" size="50"><b>Battle Request</b></font></p>
+            <div class="battle col-md-6">
                 <div class="battlerequests">
-                    <button class="button" style="vertical-align:middle; display:none" id="backbutton" onclick="showRequestBattleMain()"><span>← BACK</span></button>
+                    <button class="button" id="backbutton" onclick="showRequestBattleMain()"><span>← BACK</span></button>
                     <div class="users">
                         <?php
                             include("../php/getUsers.php");
@@ -60,8 +67,8 @@
                             include("../php/getRequests.php");
                         ?>
                     </div>
-                    <button class="button" style="vertical-align:middle" id="requestabattlebutton" onclick="showRequestABattle()"><span>REQUEST A BATTLE</span></button>
-                    <button class="button" style="vertical-align:middle" id="battlenotificationsbutton" onclick="showBattleNotifications()"><span>BATTLE NOTIFICATIONS</span></button>
+                    <button class="button" id="requestabattlebutton" onclick="showRequestABattle()"><span>REQUEST A BATTLE</span></button>
+                    <button class="button" id="battlenotificationsbutton" onclick="showBattleNotifications()"><span>BATTLE REQUESTS</span></button>
                 </div>
             </div>
         </div>

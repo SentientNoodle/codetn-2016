@@ -1,6 +1,7 @@
 <?php
     include("../php/sqlconnect.php");
     
+    // Selects the user information from the database
     $sql = $conn->prepare("SELECT Users.ID,FirstName,LastName FROM Users JOIN ClassesUsers ON ClassesUsers.UserID=Users.ID WHERE ClassesUsers.ClassID = ? AND Users.ID != ?;");
     $sql->bind_param("ii",$classid,$userid);
     $classid = $_GET["id"];
@@ -10,10 +11,9 @@
     
     $users = '';
     
-    // When you press the button, it retreives information about user from the database
     while ($row = $result->fetch_assoc()) {
         $users .= '
-            <button type="submit" class="request" name="user" value="'.$row["ID"].'"><span>'.$row["FirstName"].' '.$row["LastName"].'</span></button>
+            <button type="submit" class="button request" name="user" value="'.$row["ID"].'"><span>'.$row["FirstName"].' '.$row["LastName"].'</span></button>
         ';
     }
     

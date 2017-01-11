@@ -9,6 +9,8 @@
     $rows = $sql;
     $rows->store_result();
     $rows = $rows->num_rows;
+    
+    // Check if opponent ready
     if ($rows > 0) {
         $sql->bind_result($ids);
         $sql->fetch();
@@ -22,6 +24,7 @@
         $rows = $sql;
         $rows->store_result();
         $rows = $rows->num_rows;
+        // Check if user ready
         if ($rows > 0) {
             $sql->bind_result($ids);
             $sql->fetch();

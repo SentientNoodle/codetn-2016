@@ -1,7 +1,7 @@
 <?php
     include ("../php/sqlconnect.php");
 
-    // Retreives User's Abililities
+    // Retreives user's abililities from database
     $sql = $conn->prepare("SELECT AbilityID FROM AbilitiesUsers WHERE UserID=?;");
     $sql->bind_param("i",$userid);
     $userid = $_SESSION["id"];
@@ -37,7 +37,8 @@
     $result = $result->fetch_assoc();
     $buyerCurrency = $result["Currency"];
     
-    if ($buyerCurrency >= $price and $sellerid != $userid and !(in_array($abilityid, $buyerOwnedAbilities))) {
+    // See if the buyer can afford the market item and the user is not buying his or her own item
+    if ($buyerCurrency >= $price and $sellerid != $userid) {
         
         // Select the seller's currency
         $sql = $conn->prepare("SELECT Currency FROM Users WHERE ID=?;");
@@ -46,19 +47,41 @@
         $result = $sql->get_result();
         $result = $result->fetch_assoc();
         $sellerCurrency = $result["Currency"];
-    
-        // Insert item into user's inventory
-        $sql = $conn->prepare("INSERT INTO AbilitiesUsers(UserID,AbilityID,Supply,Active,OnMarket) VALUES(?,?,?,?,?);");
-        $sql->bind_param("iiiii",$userid, $abilityid, $supply, $active,$onMarket);
-        $supply = 20;
-        $active = 0;
-        $onMarket = 0;
+        
+        // Checks the database to see if the buyer already has the item
+        $sql = $conn->prepare("SELECT ID FROM AbilitiesUsers WHERE UserID=? AND AbilityID=?;");
+        $sql->bind_param("ii",$userid,$abilityid);
         $sql->execute();
+        $sql->store_result();
+        $rows = $sql->num_rows;
+        
+        if ($rows == 0) {
+            // Insert item into user's inventory
+            $sql = $conn->prepare("INSERT INTO AbilitiesUsers(UserID,AbilityID,Supply,Active,OnMarket) VALUES(?,?,?,?,?);");
+            $sql->bind_param("iiiii",$userid, $abilityid, $supply, $active, $onMarket);
+            $supply = 1;
+            $active = 0;
+            $onMarket = 0;
+            $sql->execute();
+        } else {
+            // Insert item into user's inventory (by adding to the supply of it)
+            $sql = $conn->prepare("SELECT Supply FROM AbilitiesUsers WHERE UserID=? AND AbilityID=?;");
+            $sql->bind_param("ii",$userid, $abilityid);
+            $sql->execute();
+            $result = $sql->get_result();
+            $result = $result->fetch_assoc();
+            $newBuyerAbilitySupply = $result["Supply"] + 1;
+            
+            // Update user's supply
+            $sql = $conn->prepare("UPDATE AbilitiesUsers SET Supply=? WHERE UserID=? AND AbilityID=?;");
+            $sql->bind_param("iii",$newBuyerAbilitySupply, $userid, $abilityid);
+            $sql->execute();
+        }
         
         // Update buyer currency
         $newBuyerCurrency = $buyerCurrency - $price;
         $sql = $conn->prepare("UPDATE Users SET Currency=? WHERE ID=?;");
-        $sql->bind_param("ii",$newBuyerCurrency,$userid);
+        $sql->bind_param("ii",$newBuyerCurrency, $userid);
         $sql->execute();
         
         // Update seller currency
@@ -71,10 +94,21 @@
         $sql = $conn->prepare("DELETE FROM Market WHERE ID=?;");
         $sql->bind_param("i",$itemid);
         $sql->execute();
-    
-        // Delete item from seller
-        $sql = $conn->prepare("DELETE FROM AbilitiesUsers WHERE UserID=? AND AbilityID=?;");
-        $sql->bind_param("ii", $sellerid, $abilityid);
+        
+        // Get supply
+        $sql = $conn->prepare("SELECT Supply FROM AbilitiesUsers WHERE UserID=? AND AbilityID=?;");
+        $sql->bind_param("ii",$sellerid,$abilityid);
         $sql->execute();
+        $result = $sql->get_result();
+        $result = $result->fetch_assoc();
+        $sellerAbilitySupply = $result["Supply"];
+        
+        // Delete item from seller if it is his or her last of that item
+        if ($sellerAbilitySupply == 1) {
+            // Delete item from seller
+            $sql = $conn->prepare("DELETE FROM AbilitiesUsers WHERE UserID=? AND AbilityID=?;");
+            $sql->bind_param("ii", $sellerid, $abilityid);
+            $sql->execute();
+        }
     }
 ?>

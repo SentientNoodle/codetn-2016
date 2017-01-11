@@ -1,6 +1,7 @@
 <?php
     include("../php/sqlconnect.php");
     
+    // Selects all the active abilities of a user's opponent from database during a PvP match
     $sql = $conn->prepare("SELECT AbilityID,Name,Description,UHealth,OHealth FROM AbilitiesUsers JOIN Abilities ON AbilitiesUsers.AbilityID=Abilities.ID WHERE UserID=? AND Active=1;");
     $sql->bind_param("i", $opponentid);
     $sql->execute();

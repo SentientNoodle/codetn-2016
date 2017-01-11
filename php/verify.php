@@ -18,6 +18,7 @@
     
     $conn->close();
     
+    // Checks if passwords match
     if (password_verify($_POST["password"], $password) == 1) {
         // Set session variables to keep user logged in and so we don't need to pull from the db so often
         $_SESSION["id"] = $id;

@@ -9,6 +9,10 @@
         exit;
     }
     
+    if (!empty($_POST)) {
+        include("../php/setUserCurrentClothing.php");
+    }
+    
     // Randomly select background image
     $imagesinv = array("inventoryback1.jpeg","inventoryback2.jpeg","inventoryback3.jpeg");
     $ninv = rand(0, count($imagesinv) - 1);
@@ -21,7 +25,7 @@
             include("../php/head.php");
         ?>
         
-        <title>CodeTN</title>
+        <title>Inventory</title>
         
 
         <link rel="stylesheet" type="text/css" href="global.css">
@@ -29,187 +33,116 @@
 
         <style>
             body {
-                background-image: url("../media/backgrounds/<?php echo $imagesinv[$ninv] ?>");
+                background-image: url("../media/shards_pattern.jpg");
             }
-            @media screen and (min-width: 1370px) {
-                .inventorybackground {
-                    width: 59%;
-                }
-                #userinfo {
-                    display: inline-block !important;
-                    height: 49.5%;
-                }
-                #stuffbackground {
-                    display: inline-block !important;
-                    height: 49.5%;
-                }
-                #characterbackground {
-                    display: inline-block !important;
-                    width: 30%;
-                    margin-left: 4%;
-                }
-                .stuffsidebar {
-                    display: inline-block;
-                }
-                .slotbackground {
-                    width: 74%;
-                    margin-right: 1%;
-                }
-                .positionpage {
-                    margin-left: 9%;
-                }
-                .slot {
-                    height: 35%;
-
-                }
-            }
-            @media screen and (max-width: 1370px) {
-                .sidebar {
-                    display: inline-block;
-                }
-                .inventorybackground {
-                    width: 56%;
-                }
-                .stuffsidebar {
-                    display: none;
-                }
-                .slotbackground {
-                    width: 98%;
-                    margin-left: 1%;
-                    margin-right: 1%;
-                    width: 75%;
-                }
-                #userinfo {
-                    display: none;
-                    height: 100%;
-                }
-                #stuffbackground {
-                    display: none;
-                    height: 100%;
-                }
-                #characterbackground {
-                    width: 40%;
-                    margin-left: 10%;
-                    display: none;
-                }
-                .positionpage {
-                    margin-left: 18%;
-                }
-                .slot {
-                    height: 25%;
-                    width: 25%;
-
-                }
-            }
-            @media screen and (max-width: 760px) {
-                .sidebar {
-                    display: none;
-                }
-                .stuffsidebar {
-                    display: none;
-                }
-                .sidenavarrowhide {
-                    display: inline-block;
-                }
-                .inventorybackground {
-                    width: 100%;
-                }
-                .slotbackground {
-                    width: 98%;
-                    margin-left: 1%;
-                }
-                #userinfo {
-                    height: 100%;
-                    width: 95%;
-                    margin-left: 4.5%;
-                }
-                #stuffbackground {
-                    height: 100%;
-                    width: 95%;
-                    margin-left: 4.5%;
-                }
-                #characterbackground {
-                    width: 80%;
-                    background-size: 350px 430px;
-                    margin-left: 10%;
-                    background-position: 50% 80%;
-                    display: none;
-                }
-            }
-            
         </style>
     </head>
-    <body>
-        <?php
-            include("../php/navbar.php");
-        ?>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <button class="button" style="vertical-align:middle" onclick="showCharacter()"><img src="media/buttons/characterimage.png" height="90" width="80"></img><br><span>CHARACTER</span></button>
-            <button class="button" style="vertical-align:middle" onclick="showStats()"><img src="media/buttons/statsimage.png" height="80" width="80"></img><br><span>STATS</span></button>
-            <button class="button" style="vertical-align:middle" onclick="showStuff()"><img src="media/buttons/stuffimage.png" height="90" width="130"></img><br><span>STUFF</span></button>
+    
+<body>
+    
+<?php
+    include("../php/navbar.php");
+?>
+
+<div class="container-fluid">
+    <div class="row content">
+        <!-- Character and character stats for md and lg bootstrap version -->
+        <div class="col-md-3 characterBackground hidden-xs hidden-sm">
+            <?php include("../php/getUserCurrentClothing.php") ?>
         </div>
-    </body>
-        
-        <div class="positionall">
-            <div class="sidebar">
-                <button class="button" style="vertical-align:middle" onclick="showCharacter()"><img src="media/buttons/characterimage.png" height="90" width="80"></img><br><span>CHARACTER</span></button>
-                <button class="button" style="vertical-align:middle" onclick="showStats()"><img src="media/buttons/statsimage.png" height="80" width="80"></img><br><span>STATS</span></button>
-                <button class="button" style="vertical-align:middle" onclick="showStuff()"><img src="media/buttons/stuffimage.png" height="110" width="130"></img><br><span>STUFF</span></button>
+        <div class="col-md-8 col-md-offset-1 userInfo hidden-xs hidden-sm" style="padding-left:3%">
+            <div class="row">
+                <p> <font color="white" size="5.5"> <b><?php include("../php/getUsername.php"); ?></b></font></p>
+        <!----------------------------------------------------display-battle-info------------------------------------------------------------------------------------------------------------------------------>
+                <p> <font color="white" size="3"> <b>Battle Wins: <?php include("../php/getWins.php"); ?></b></p>
+                <p> <font color="white" size="3"> <b>Battle Losses: <?php include("../php/getLosses.php"); ?></b></p>
+                <p> <font color="white" size="3"> <b>Win Percentage: <?php include("../php/getWinPercentage.php"); ?>%</b></p>
             </div>
-            <div class="sidenavarrowhide"><a onclick="openNav()"><span class="sidenavarrow">❯</span></a></div>
-            <div id="characterbackground">
-                <div class="positionclothes">
-                    <div class="hat" style="background-image:url('PHP GET HAT HERE')"></div>
-                    <div class="shirt" style="background-image:url('PHP GET HAT HERE')"></div>
+            <div class="row">
+        <!--__________________________________________________User_abilities_being_used______________________________________________________________________________________________________________________-->
+                <p><font color="white" size="3"><b>Abilities Being Used:</b></p>
+                <div class="row">
+                    <?php
+                        include("../php/getInventoryActiveAbilities.php");   //import-active-abilities
+                    ?>
                 </div>
+            </div>  <!-- row line end line 76 -->
+        </div>
+        <!-- Character and character stats for xs and sm bootstrap version -->
+        <div class="col-xs-10 col-xs-offset-1 characterBackground hidden-md hidden-lg">
+            
+            <?php include("../php/getUserCurrentClothing.php" ) ?>
             </div>
-            <div class="inventorybackground">
-                
-                <div id="userinfo">
-                    <div class="positioninfocol">
-                        <p style="margin-left:1%"><font color="white" size="5.5"><b>USERNAME HERE<!-- GET USERNAME HERE --></b></font></p>
-                    
-                        <p style="margin-left:2%"><font color="white" size="3"><b>Health:</b> <!-- Get health here --></font></p>
-                            <div class="progress" style="margin-left:1%">
-                                <div class="health progress-bar" role="progressbar" aria-valuenow="<?php echo $userHealth ?>" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        
-                        <p style="margin-left:2%"><font color="white" size="3"><b>Mana:</b> <!-- Get mana here --></font></p>
-                            <div class="progress" style="margin-left:1%">
-                                <div class="mana progress-bar" role="progressbar" aria-valuenow="<?php ?>" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        <p style="margin-left:2%"><font color="white" size="3"><b>Battle Wins:</b> <!-- # of battles won here --></p>
-                        <p style="margin-left:2%; margin-top:3%"><font color="white" size="3"><b>Tournament Wins:</b> <!-- # of tournaments won here --></p>    
-                    </div> 
-                    <div class="positioninfocol">
-                        <div class="abilitiesbeingused">
-                            <p style="margin-left:2%; margin-top:10%"><font color="white" size="3"><b>Abilities Being Used:</b> </p>
-                            <?php
-                                include("../php/getUserActiveAbilities.php");
-                            ?>
-                        </div>
-                    </div>
+        </div>
+    </div>
+    <div class="row content" style="margin-top:1%">
+        <nav class="navbar navbar-inverse hidden-md hidden-lg" style="margin-top:1%">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand"><p>Your Stats</p></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#inventoryStatsNavBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>  
+                    </button>
                 </div>
-                    
-                <div id="stuffbackground">
-                    <div class="stuffsidebar">
-                            <button class="button" style="vertical-align:middle" onclick="showItems()"><img src="media/buttons/itemsimage.png" height="100" width="140"></img><br><span>ITEMS</span></button>
-                            <button class="button" style="vertical-align:middle" onclick="showAbilities()"><img src="media/buttons/abilitiesimage.png" height="100" width="140"></img><br><span>ABILITIES</span></button>
-                            <button class="button" style="vertical-align:middle" onclick="showClothes()"><img src="media/buttons/clothesimage.png" height="100" width="100"></img><br><span>CLOTHES</span></button>
-                        </div>
-                    <button class="positionpage">←</button>
-                    <p style="display:inline-block; margin-left:19%"><font color="white"><b>PAGE <!-- CURRENT PAGE # HERE -->0/0<!-- TOTAL PAGE # HERE --></b></font></p>
-                    <button style="margin-left:19%; background-color:silver; color:black; font-weight:bold;">→</button>
-                    <div class="slotbackground" style="width:60%">
+                <div class="collapse navbar-collapse" id="inventoryStatsNavBar">
+                    <p> <font color="white" size="5.5"> <br class="hidden-xs visible-sm hidden-md hidden-lg"><br class="hidden-xs visible-sm hidden-md hidden-lg"> <b><?php include("../php/getUsername.php"); ?></b> <!-- GET USERNAME HERE --> </font></p>
+                    <p> <font color="white" size="3"> <b>Battle Wins: <?php include("../php/getWins.php"); ?></b></p>
+                    <p> <font color="white" size="3"> <b>Battle Losses: <?php include("../php/getLosses.php"); ?></b></p>
+                    <p> <font color="white" size="3"> <b>Win Percentage: <?php include("../php/getWinPercentage.php"); ?>%</b></p>
+                    <a class="hidden-xs"> <font color="white" size="3"> <b>Abilities Being Used:</b></font></a>
+                    <button type="button" class="navbar-toggle button hidden-sm hidden-md hidden-lg" data-toggle="collapse" data-target="#inventoryActiveAbilities">Abilities Being Used</button>
+                    <div class="collapse navbar-collapse" id="inventoryActiveAbilities">
                         <?php
-                            include("../php/getInventoryAbilities.php");
+                            include("../php/getInventoryActiveAbilitiesMobile.php");   //import-active-abilities
                         ?>
                     </div>
                 </div>
-                
             </div>
+        </nav>
+    </div>
+    <div class="row content" style="margin-top:1%">
+        <!-- Side bar for abilities, items, clothes button md and lg version -->
+        <div class="col-md-3 sidenav hidden-xs hidden-sm">
+            <button class="button" style="vertical-align:middle" onclick="showAbilitiesItems()"><span>Abilities & Items</span></button>
+            <button class="button" style="vertical-align:middle" onclick="showClothes()"><span>Clothes</span></button>
         </div>
-        
+        <!-- Nav bar for mobile version -->
+        <nav class="navbar navbar-inverse hidden-md hidden-lg">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand"><p id="inventoryType">ERROR: about information type is not selected</p></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#inventoryNavBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>  
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="inventoryNavBar">
+                    <button class="button" style="vertical-align:middle" onclick="showAbilitiesItems()"><span>Abilities & Items</span></button>
+                    <button class="button" style="vertical-align:middle" onclick="showClothes()"><span>Clothes</span></button>
+                </div>
+            </div>
+        </nav>
+        <div class="col-md-9" id="inventoryAbilitiesItems">
+            <?php
+                include("../php/getInventoryAbilities.php");
+            ?>
+        </div>
+        <div class="col-md-9" id="inventoryClothes">
+            <?php
+            include("../php/getClothes.php");
+            ?>
+        </div>
+    </div>
+</div> 
+
+<script type="text/javascript">
+    showAbilitiesItems();
+</script>
+
+
+
     </body>
 </html>

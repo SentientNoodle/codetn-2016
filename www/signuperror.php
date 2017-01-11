@@ -22,17 +22,8 @@
                 $exists = true;
             }
         ?>
-        
-        <h2 style="font-weight:bold; margin-left:1%">TROUBLESHOOTING</h1>
-        <p style="margin-left:1%; font-size:115%">POSSBILE PROBLEM/SOLUTION</p>
-        <p style="margin-left:1%; font-size:115%">POSIBILE PROBLESKADA/SOLODJA 2</p>
-        <p style="margin-left:1%; font-size:115%">POSSIBLE PROBLEM/NOITULOS 3</p>
-        <p style="margin-left:1%; font-size:115%">PROBLEM SOLUTION/POSSIBLE 4</p>
-        <p style="margin-left:1%; font-size:115%">POSSIBLE POSSIBLE/POSSIBLE 5</p>
-        <p style="margin-left:1%; font-size:115%">POSSOSOADKSAD SADSOADA/DSADASDASODA 6</p>
-        
-        <h2 style="font-weight:bold; margin-left:1%">STILL NOT WORKING?</h2>
-        <p style="margin-left:1%; font-size:115%">Contact us at EMAIL HERE</p>
+        <p style="margin-left:1%; font-size:115%">Contact us at <a href="mailto:FlavortownCodeTN@gmail.com?Subject=Hello%20Flavortown%20team,%20I%20found%20a%20bug" target="_top">FlavortownCodeTN@gmail.com</a></p>
+        <p style="margin-left:1%">[We will try to get back to you as soon as possible]</p>
         
     </body>
 </html>

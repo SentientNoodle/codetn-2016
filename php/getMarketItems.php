@@ -13,14 +13,17 @@
     $items = "";
     while ($row = $result->fetch_assoc()) {
         $items .= '
-            <div class="marketentry">
-                <h2>'.$row["Name"]." - ".$row["Price"].'</h2>
-                <h3>'.$row["FirstName"]." ".$row["LastName"].'</h3>
-                <p>'.$row["Description"].'</p>
-                <form action="market.php?id='.$_GET["id"].'" method="post">
-                    <input type="hidden" name="itemid" value="'.$row["ID"].'">
-                    <input type="submit" value="BUY"> 
-                </form>
+            <div class="col-sm-4">
+                <div class="panel panel-orange">
+                    <div class="panel-heading">'.$row["Name"].'</div>
+                    <div class="panel-body" style="height:100px;overflow-y:auto;">'.$row["Description"].'</div>
+                    <div class="panel-footer">'.$row["FirstName"]." ".$row["LastName"].'<br>'.$row["Price"].'<br> 
+                        <form action="market.php?id='.$_GET["id"].'" method="post">
+                            <input type="hidden" name="itemid" value="'.$row["ID"].'">
+                            <input type="submit" value="BUY"> 
+                        </form>
+                    </div>
+                </div>
             </div>
         ';
     }

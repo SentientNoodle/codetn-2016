@@ -1,17 +1,21 @@
 <html>
     <head>
-        <script type="text/javascript">
-            // Just testing out some stuff for the timer; seeing how it works with js compared to php
-            
-            function gettime(e) {
-                e.innerHTML = e.innerHTML + Math.floor(Date.now() / 1000);
-            }
-        </script>
+        
     </head>
-    <body onload="gettime(document.getElementById('js'));">
-        <p id="js">JS: </p>
+    <body>
         <?php
-            echo '<p id="php">PHP: '.time().'</p>'
+            include("../php/sqlconnect.php");
+            $sql = $conn->prepare("SELECT Abilities.ID,UHealth,OHealth FROM Abilities JOIN AbilitiesUsers ON AbilitiesUsers.AbilityID=Abilities.ID WHERE UserID=? AND Active=1;");
+            $sql->bind_param("i",$userid);
+            $userid = 13;
+            $sql->execute();
+            $result = $sql->get_result();
+            while ($row = $result->fetch_assoc()) {
+                if ($row["ID"] == 4) {
+                    break;
+                }
+            }
+            echo "<h1>".$row["ID"]."</h1>";
         ?>
     </body>
 </html>

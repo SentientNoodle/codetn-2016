@@ -51,11 +51,11 @@
             <input type="password" name="password2" id="password2" onkeyup="validate();" required>
             <br>
             <br>
-            <label class="radio-inline">
-                <input type="radio" name="isteacher" id="student" value="0">Student
+            <label class="radio-inline col-xs-6">
+                Student <input type="radio" name="isteacher" id="student" value="0" required>
             </label>
-            <label class="radio-inline">
-                <input type="radio" name="isteacher" id="teacher" value="1">Teacher
+            <label class="radio-inline col-xs-6">
+                Teacher <input type="radio" name="isteacher" id="teacher" value="1">
             </label>
             <br>
             <input type="submit">

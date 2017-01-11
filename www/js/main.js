@@ -6,7 +6,7 @@ function autoIndexSlide() {
     }
     else if (indexsseextended == 0) {
         if (indexsse == 1) {
-        document.getElementById("slideName").innerHTML = "[Website Name]";
+        document.getElementById("slideName").innerHTML = "Scholarly Fisticuffs";
         document.getElementById("slideInfo").innerHTML = document.getElementById("slideInfo1").innerHTML;
         document.getElementById("dot1").style.backgroundColor = "black";
         document.getElementById("dot2").style.backgroundColor = "#bbb";
@@ -42,7 +42,7 @@ function autoIndexSlide() {
 }
 function indexsse1() {
     indexsse = 2;
-    document.getElementById("slideName").innerHTML = "[Website Name]";
+    document.getElementById("slideName").innerHTML = "Scholarly Fisticuffs";
     document.getElementById("slideInfo").innerHTML = document.getElementById("slideInfo1").innerHTML;
     document.getElementById("dot1").style.backgroundColor = "black";
     document.getElementById("dot2").style.backgroundColor = "#bbb";
@@ -66,19 +66,22 @@ function indexsse3() {
 }
 /*about.js*/
 function showFeatures() {
-    document.getElementById("positionFeatures").style.display = 'inline-block';
-    document.getElementById("positionAboutWeb").style.display = 'none';
-    document.getElementById("positionAboutUs").style.display = 'none';
+    document.getElementById("aboutFeatures").style.display = 'inline-block';
+    document.getElementById("aboutWeb").style.display = 'none';
+    document.getElementById("aboutUs").style.display = 'none';
+    document.getElementById("aboutType").innerHTML = 'Features';
 }
 function showAboutWeb () {
-    document.getElementById("positionFeatures").style.display = 'none';
-    document.getElementById("positionAboutWeb").style.display = 'inline-block';
-    document.getElementById("positionAboutUs").style.display = 'none';
+    document.getElementById("aboutFeatures").style.display = 'none';
+    document.getElementById("aboutWeb").style.display = 'inline-block';
+    document.getElementById("aboutUs").style.display = 'none';
+    document.getElementById("aboutType").innerHTML = 'About "Scholarly Fisticuffs"';
 }
 function showAboutUs() {
-    document.getElementById("positionFeatures").style.display = 'none';
-    document.getElementById("positionAboutWeb").style.display = 'none';
-    document.getElementById("positionAboutUs").style.display = 'inline-block';
+    document.getElementById("aboutFeatures").style.display = 'none';
+    document.getElementById("aboutWeb").style.display = 'none';
+    document.getElementById("aboutUs").style.display = 'inline-block';
+    document.getElementById("aboutType").innerHTML = 'About Us';
 }
 
 /*findgame.js*/
@@ -117,53 +120,54 @@ function showBattleNotifications() {
 }
 
 /*inventory.js*/
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+function toggleNav() {
+    sidenav = document.getElementById("sidenav");
+    arrow = document.getElementById("arrow");
+    if (sidenav.style.width == "250px") {
+        sidenav.style.display = "none";
+        sidenav.style.width = "0px";
+        arrow.style.right = "0px";
+        arrow.innerHTML = "❮";
+    } else {
+        sidenav.style.display = "inline";
+        sidenav.style.width = "250px";
+        arrow.style.right = "250px";
+        arrow.innerHTML = "❯";
+    }
 }
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-function showItems() { 
-    //show items (using php to get from database what items user has)
-}
-function showAbilities() {
-    //show abilities (using php...)
+// function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0px";
+//     document.getElementById("arrow").style.right = "0px";
+// }
+function showAbilitiesItems() { 
+    document.getElementById("inventoryAbilitiesItems").style.display = 'inline-block';
+    document.getElementById("inventoryClothes").style.display = 'none';
+    document.getElementById("inventoryType").innerHTML = 'Abilities & Items';
 }
 function showClothes() {
-    //show clothes (using php...)
-}
-function showCharacter() {
-    document.getElementById("characterbackground").style.display = 'inline-block';
-    document.getElementById("userinfo").style.display = 'none';
-    document.getElementById("stuffbackground").style.display = 'none';
-}
-function showStats() {
-    document.getElementById("characterbackground").style.display = 'none';
-    document.getElementById("userinfo").style.display = 'inline-block';
-    document.getElementById("stuffbackground").style.display = 'none';
-}
-function showStuff() {
-    document.getElementById("characterbackground").style.display = 'none';
-    document.getElementById("userinfo").style.display = 'none';
-    document.getElementById("stuffbackground").style.display = 'inline-block';
+    document.getElementById("inventoryAbilitiesItems").style.display = 'none';
+    document.getElementById("inventoryClothes").style.display = 'inline-block';
+    document.getElementById("inventoryType").innerHTML = 'Clothes';
 }
 
 /*market.js*/
 function showMarket() {
     document.getElementById("marketitems").style.display = 'inline-block';
     document.getElementById("marketactive").style.display = 'none';
-    document.getElementById("stuffbackground").style.display = 'none';
+    document.getElementById("inventoryitems").style.display = 'none';
+    document.getElementById("marketType").innerHTML = 'Market Items';
 }
 function showSellItems() {
     document.getElementById("marketitems").style.display = 'none';
     document.getElementById("marketactive").style.display = 'none';
-    document.getElementById("stuffbackground").style.display = 'inline-block';
+    document.getElementById("inventoryitems").style.display = 'inline-block';
+    document.getElementById("marketType").innerHTML = 'Sell An Item';
 }
 function showActive() {
     document.getElementById("marketitems").style.display = 'none';
     document.getElementById("marketactive").style.display = 'inline-block';
-    document.getElementById("stuffbackground").style.display = 'none';
+    document.getElementById("inventoryitems").style.display = 'none';
+    document.getElementById("marketType").innerHTML = 'Your Active Market Items';
 }
 /*pvp.js*/
 function timer(t) {
@@ -192,286 +196,6 @@ function checkTurn() {
         async: true
     });
 }
-/*
-emotes = document.getElementsByClassName("emote");
-for (var i=0; i<emotes.length(); i++) {
-    emotes[i].style.display = "none";
-}
-document.getElementById("emotebeingshown").style.display = "inline-block";
-*/
-function emoteShow() {
-    document.getElementById("emoteHello").style.display = 'inline-block';
-    document.getElementById("emoteWellPlayed").style.display = 'inline-block';
-    document.getElementById("emoteWow").style.display = 'inline-block';
-    document.getElementById("emoteHaha").style.display = 'inline-block';
-    document.getElementById("emoteSorry").style.display = 'inline-block';
-    document.getElementById("emoteUhhhhh").style.display = 'inline-block';
-    document.getElementById("emoteOops").style.display = 'inline-block';
-    document.getElementById("emoteCustom").style.display = 'inline-block';
-    document.getElementById("emoteBack").style.display = 'inline-block';
-    document.getElementById("emoteEmotes").style.display = 'none';
-}
-function emoteHide() {
-    document.getElementById("emoteHello").style.display = 'none';
-    document.getElementById("emoteWellPlayed").style.display = 'none';
-    document.getElementById("emoteWow").style.display = 'none';
-    document.getElementById("emoteHaha").style.display = 'none';
-    document.getElementById("emoteSorry").style.display = 'none';
-    document.getElementById("emoteUhhhhh").style.display = 'none';
-    document.getElementById("emoteOops").style.display = 'none';
-    document.getElementById("emoteCustom").style.display = 'none';
-    document.getElementById("emoteBack").style.display = 'none';
-    document.getElementById("emoteEmotes").style.display = 'inline-block';
-}
-function emoteReset() {
-    document.getElementById("youEmoteBubble").style.display = 'none';
-    document.getElementById("youEmoteBubble").style.opacity = 1;
-    document.getElementById("emoteEmotes").style.display = 'inline-block';
-}
-function emoteHello() { //Hello emote
-    //Hiding emote options
-    document.getElementById("emoteHello").style.display = 'none';
-    document.getElementById("emoteWellPlayed").style.display = 'none';
-    document.getElementById("emoteWow").style.display = 'none';
-    document.getElementById("emoteHaha").style.display = 'none';
-    document.getElementById("emoteSorry").style.display = 'none';
-    document.getElementById("emoteUhhhhh").style.display = 'none';
-    document.getElementById("emoteOops").style.display = 'none';
-    document.getElementById("emoteCustom").style.display = 'none';
-    document.getElementById("emoteBack").style.display = 'none';
-    document.getElementById("emoteEmotes").style.display = 'none';
-    //Showing the emote
-    document.getElementById("youEmoteBubble").style.display = 'inline-block';
-    var hello = null;
-    var emoteRandomizer = Math.floor((Math.random() * 3) + 1);
-    if (emoteRandomizer == 1) {
-        hello = "Hello.";
-    }
-    else if (emoteRandomizer == 2) {
-        hello = "Hi there!";
-    }
-    else if (emoteRandomizer == 3) {
-        hello = "Hey...";
-    }
-    else {
-        hello = "null";
-    }
-    document.getElementById("emoteText").innerHTML = hello;
-    setTimeout(function(){document.getElementById("youEmoteBubble").style.opacity = 0;}, 4600);
-    setTimeout(emoteReset, 5000);
-
-}
-function emoteWellPlayed() {
-    //Hiding emote options
-    document.getElementById("emoteHello").style.display = 'none';
-    document.getElementById("emoteWellPlayed").style.display = 'none';
-    document.getElementById("emoteWow").style.display = 'none';
-    document.getElementById("emoteHaha").style.display = 'none';
-    document.getElementById("emoteSorry").style.display = 'none';
-    document.getElementById("emoteUhhhhh").style.display = 'none';
-    document.getElementById("emoteOops").style.display = 'none';
-    document.getElementById("emoteCustom").style.display = 'none';
-    document.getElementById("emoteBack").style.display = 'none';
-    document.getElementById("emoteEmotes").style.display = 'none';
-    //Showing the emote
-    document.getElementById("youEmoteBubble").style.display = 'inline-block';
-    var WellPlayed = null;
-    var emoteRandomizer = Math.floor((Math.random() * 3) + 1);
-    if (emoteRandomizer == 1) {
-        WellPlayed = "Well Played.";
-    }
-    else if (emoteRandomizer == 2) {
-        WellPlayed = "What a play!";
-    }
-    else if (emoteRandomizer == 3) {
-        WellPlayed = "Nice Decision...";
-    }
-    else {
-        WellPlayed = "null";
-    }
-    document.getElementById("emoteText").innerHTML = WellPlayed;
-    setTimeout(function(){document.getElementById("youEmoteBubble").style.opacity = 0;}, 4600);
-    setTimeout(emoteReset, 5000);
-}
-function emoteWow() {
-    //Hiding emote options
-    document.getElementById("emoteHello").style.display = 'none';
-    document.getElementById("emoteWellPlayed").style.display = 'none';
-    document.getElementById("emoteWow").style.display = 'none';
-    document.getElementById("emoteHaha").style.display = 'none';
-    document.getElementById("emoteSorry").style.display = 'none';
-    document.getElementById("emoteUhhhhh").style.display = 'none';
-    document.getElementById("emoteOops").style.display = 'none';
-    document.getElementById("emoteCustom").style.display = 'none';
-    document.getElementById("emoteBack").style.display = 'none';
-    document.getElementById("emoteEmotes").style.display = 'none';
-    //Showing the emote
-    document.getElementById("youEmoteBubble").style.display = 'inline-block';
-    var Wow = null;
-    var emoteRandomizer = Math.floor((Math.random() * 3) + 1);
-    if (emoteRandomizer == 1) {
-        Wow = "Wow!";
-    }
-    else if (emoteRandomizer == 2) {
-        Wow = "Amazing.";
-    }
-    else if (emoteRandomizer == 3) {
-        Wow = "Incredible...";
-    }
-    else {
-        Wow = "null";
-    }
-    document.getElementById("emoteText").innerHTML = Wow;
-    setTimeout(function(){document.getElementById("youEmoteBubble").style.opacity = 0;}, 4600);
-    setTimeout(emoteReset, 5000);
-}
-function emoteHaha() {
-    //Hiding emote options
-    document.getElementById("emoteHello").style.display = 'none';
-    document.getElementById("emoteWellPlayed").style.display = 'none';
-    document.getElementById("emoteWow").style.display = 'none';
-    document.getElementById("emoteHaha").style.display = 'none';
-    document.getElementById("emoteSorry").style.display = 'none';
-    document.getElementById("emoteUhhhhh").style.display = 'none';
-    document.getElementById("emoteOops").style.display = 'none';
-    document.getElementById("emoteCustom").style.display = 'none';
-    document.getElementById("emoteBack").style.display = 'none';
-    document.getElementById("emoteEmotes").style.display = 'none';
-    //Showing the emote
-    document.getElementById("youEmoteBubble").style.display = 'inline-block';
-    var Haha = null;
-    var emoteRandomizer = Math.floor((Math.random() * 3) + 1);
-    if (emoteRandomizer == 1) {
-        Haha = "HAHA!";
-    }
-    else if (emoteRandomizer == 2) {
-        Haha = "Hilarious...";
-    }
-    else if (emoteRandomizer == 3) {
-        Haha = "Lol.";
-    }
-    else {
-        Haha = "null";
-    }
-    document.getElementById("emoteText").innerHTML = Haha;
-    setTimeout(function(){document.getElementById("youEmoteBubble").style.opacity = 0;}, 4600);
-    setTimeout(emoteReset, 5000);
-}
-function emoteSorry() {
-    //Hiding emote options
-    document.getElementById("emoteHello").style.display = 'none';
-    document.getElementById("emoteWellPlayed").style.display = 'none';
-    document.getElementById("emoteWow").style.display = 'none';
-    document.getElementById("emoteHaha").style.display = 'none';
-    document.getElementById("emoteSorry").style.display = 'none';
-    document.getElementById("emoteUhhhhh").style.display = 'none';
-    document.getElementById("emoteOops").style.display = 'none';
-    document.getElementById("emoteCustom").style.display = 'none';
-    document.getElementById("emoteBack").style.display = 'none';
-    document.getElementById("emoteEmotes").style.display = 'none';
-    //Showing the emote
-    document.getElementById("youEmoteBubble").style.display = 'inline-block';
-    var Sorry = null;
-    var emoteRandomizer = Math.floor((Math.random() * 3) + 1);
-    if (emoteRandomizer == 1) {
-        Sorry = "Sorry...";
-    }
-    else if (emoteRandomizer == 2) {
-        Sorry = "I apologize.";
-    }
-    else if (emoteRandomizer == 3) {
-        Sorry = "My apologies.";
-    }
-    else {
-        Sorry = "null";
-    }
-    document.getElementById("emoteText").innerHTML = Sorry;
-    setTimeout(function(){document.getElementById("youEmoteBubble").style.opacity = 0;}, 4600);
-    setTimeout(emoteReset, 5000);
-}
-function emoteUhhhhh() {
-    //Hiding emote options
-    document.getElementById("emoteHello").style.display = 'none';
-    document.getElementById("emoteWellPlayed").style.display = 'none';
-    document.getElementById("emoteWow").style.display = 'none';
-    document.getElementById("emoteHaha").style.display = 'none';
-    document.getElementById("emoteSorry").style.display = 'none';
-    document.getElementById("emoteUhhhhh").style.display = 'none';
-    document.getElementById("emoteOops").style.display = 'none';
-    document.getElementById("emoteCustom").style.display = 'none';
-    document.getElementById("emoteBack").style.display = 'none';
-    document.getElementById("emoteEmotes").style.display = 'none';
-    //Showing the emote
-    document.getElementById("youEmoteBubble").style.display = 'inline-block';
-    var Uhhhhh = null;
-    var emoteRandomizer = Math.floor((Math.random() * 3) + 1);
-    if (emoteRandomizer == 1) {
-        Uhhhhh = "Uhhhhh...";
-    }
-    else if (emoteRandomizer == 2) {
-        Uhhhhh = "...";
-    }
-    else if (emoteRandomizer == 3) {
-        Uhhhhh = "*cricket *cricket*";
-    }
-    else {
-        Uhhhhh = "null";
-    }
-    document.getElementById("emoteText").innerHTML = Uhhhhh;
-    setTimeout(function(){document.getElementById("youEmoteBubble").style.opacity = 0;}, 4600);
-    setTimeout(emoteReset, 5000);
-}
-function emoteOops() {
-    //Hiding emote options
-    document.getElementById("emoteHello").style.display = 'none';
-    document.getElementById("emoteWellPlayed").style.display = 'none';
-    document.getElementById("emoteWow").style.display = 'none';
-    document.getElementById("emoteHaha").style.display = 'none';
-    document.getElementById("emoteSorry").style.display = 'none';
-    document.getElementById("emoteUhhhhh").style.display = 'none';
-    document.getElementById("emoteOops").style.display = 'none';
-    document.getElementById("emoteCustom").style.display = 'none';
-    document.getElementById("emoteBack").style.display = 'none';
-    document.getElementById("emoteEmotes").style.display = 'none';
-    //Showing the emote
-    document.getElementById("youEmoteBubble").style.display = 'inline-block';
-    var Oops = null;
-    var emoteRandomizer = Math.floor((Math.random() * 3) + 1);
-    if (emoteRandomizer == 1) {
-        Oops = "Oops...";
-    }
-    else if (emoteRandomizer == 2) {
-        Oops = "Mistakes were made.";
-    }
-    else if (emoteRandomizer == 3) {
-        Oops = "My bad.";
-    }
-    else {
-        Oops = "null";
-    }
-    document.getElementById("emoteText").innerHTML = Oops;
-    setTimeout(function(){document.getElementById("youEmoteBubble").style.opacity = 0;}, 4600);
-    setTimeout(emoteReset, 5000);
-}
-function emoteCustom() {
-    //Hiding emote options
-    document.getElementById("emoteHello").style.display = 'none';
-    document.getElementById("emoteWellPlayed").style.display = 'none';
-    document.getElementById("emoteWow").style.display = 'none';
-    document.getElementById("emoteHaha").style.display = 'none';
-    document.getElementById("emoteSorry").style.display = 'none';
-    document.getElementById("emoteUhhhhh").style.display = 'none';
-    document.getElementById("emoteOops").style.display = 'none';
-    document.getElementById("emoteCustom").style.display = 'none';
-    document.getElementById("emoteBack").style.display = 'none';
-    document.getElementById("emoteEmotes").style.display = 'none';
-    //Showing the emote
-    document.getElementById("youEmoteBubble").style.display = 'inline-block';
-    document.getElementById("emoteText").innerHTML = /*PHP GET CUSTOM TEXT HERE */"[Custom]";
-    setTimeout(function(){document.getElementById("youEmoteBubble").style.opacity = 0;}, 4600);
-    setTimeout(emoteReset, 5000);
-}
-
 /*signup.js*/
 function validate() {
     var password = document.getElementById("password");
@@ -502,4 +226,76 @@ function getPassStrength() {
         display.innerHTML = "Strength: " + scores[strength];
         meter.style.display = "inline-block";
     }
+}
+
+/* changepassword.js */
+function validateChanged() {
+    var password = document.getElementById("newpassword");
+    var password2 = document.getElementById("confirmnewpassword");
+    
+    if (password.value != password2.value) {
+        password2.setCustomValidity("Passwords don't match!");
+        return false;
+    } else {
+        password2.setCustomValidity("");
+        return true;
+    }
+}
+
+function getChangedPassStrength() {
+    var pass = document.getElementById("newpassword").value;
+    var meter = document.getElementById("strengthMeter");
+    var display = document.getElementById("strengthText");
+    
+    var strength = zxcvbn(pass).score;
+    meter.value = strength;
+    
+    var scores = ["Very Bad","Bad","Weak","Good", "Strong"];
+    if (pass === "") {
+        display.innerHTML = "";
+        meter.style.display = "none";
+    } else {
+        display.innerHTML = "Strength: " + scores[strength];
+        meter.style.display = "inline-block";
+    }
+}
+
+/*win.js*/
+function firework4() {
+    document.getElementById("firework4").style.backgroundColor = 'red';
+    setTimeout(firework3, 1000);
+}
+function firework3() {
+    document.getElementById("firework4").style.backgroundColor = 'black';
+    document.getElementById("firework3").style.backgroundColor = 'red';
+    setTimeout(firework2, 1000);
+}
+function firework2() {
+    document.getElementById("firework3").style.backgroundColor = 'black';
+    document.getElementById("firework2").style.backgroundColor = 'red';
+    setTimeout(firework1, 1000);
+}
+function firework1() {
+    document.getElementById("firework2").style.backgroundColor = 'black';
+    document.getElementById("firework1").style.backgroundColor = 'red';
+    setTimeout(fireworkExplosionStage1, 1000);
+}
+function fireworkExplosionStage1() {
+    document.getElementById("firework1").style.backgroundColor = 'black';
+    document.getElementById("fireworkExplosionStage1").style.backgroundColor = 'red';
+    setTimeout(fireworkExplosionStage2, 1000);
+}
+function fireworkExplosionStage2() {
+    document.getElementById("fireworkExplosionStage2").style.backgroundColor = 'orange';
+    setTimeout(fireworkExplosionStage3, 1000);
+}
+function fireworkExplosionStage3() {
+    document.getElementById("fireworkExplosionStage3").style.backgroundColor = "yellow";
+    setTimeout(endFirework, 1000);
+}
+function endFirework() {
+    document.getElementById("fireworkExplosionStage1").style.backgroundColor = 'black';
+    document.getElementById("fireworkExplosionStage2").style.backgroundColor = 'black';
+    document.getElementById("fireworkExplosionStage3").style.backgroundColor = 'black';
+    document.getElementById("youWin").innerHTML = 'You Win!';
 }

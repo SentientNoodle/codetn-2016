@@ -1,6 +1,7 @@
 <?php
     include("../php/sqlconnect.php");
     
+    // Selects all active abilities from the database for a user
     $sql = $conn->prepare("SELECT AbilityID,Name,Description,UHealth,OHealth FROM AbilitiesUsers JOIN Abilities ON AbilitiesUsers.AbilityID=Abilities.ID WHERE UserID=? AND Active=1;");
     $sql->bind_param("i", $userid);
     $userid = $_SESSION["id"];

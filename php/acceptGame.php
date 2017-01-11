@@ -1,10 +1,10 @@
 <?php
     include("../php/sqlconnect.php");
     
-    // Lets the database know the opponet is ready
+    // Lets the database know the opponent is ready
     $sql = $conn->prepare("UPDATE Games SET OpponentReady=1 WHERE ID=?;");
     $sql->bind_param("i",$gameid);
-    $gameid = $_POST["request"];
+    $gameid = $_POST["accept"];
     $sql->execute();
     
     // Selects information about user and opponent from the Games table in the database
@@ -16,7 +16,8 @@
     
     $userid = $result["UserID"];
     $opponentid = $result["OpponentID"];
-    
+
+    // Updates Health throughout battle
     $sql = $conn->prepare("SELECT Health FROM Users WHERE ID=?;");
     $sql->bind_param("i",$userid);
     $sql->execute();

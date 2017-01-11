@@ -1,8 +1,5 @@
 <?php
-    /*
-        We're gonna need this on just about every page
-        so I put it in its own file that we can just call with one line
-    */
+    // We need this on every page so I put it in a file so we can call it with one line
     echo '
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- For proper handling of mobile -->

@@ -19,7 +19,7 @@
         <title>CodeTN</title>
         <style>
             body {
-                background-image: url("http://bgfons.com/upload/paper_texture3887.jpg");
+                background-image: url("media/backgrounds/paper_texture.png");
                 background-size: 100% 100%;
             }
         </style>
@@ -29,7 +29,17 @@
             include("../php/navbar.php");
         ?>
         <div class="container text-center" id="contactinfo">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <h1 id="contacttext">CONTACT</h1>
+            <img src="../media/features/logo.png" height="100%" width="auto">
+            <Br>
             <h4 id="contacttext">The best way to contact us is via email.</h4>
             <br>
             <h4 id="contacttext">Team's Email: <a href="mailto:FlavortownCodeTN@gmail.com?Subject=Hello%20Flavortown%20team,%20I%20found%20a%20bug" target="_top">FlavortownCodeTN@gmail.com</a></h4>

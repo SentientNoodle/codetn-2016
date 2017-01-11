@@ -1,0 +1,82 @@
+[10-Jan-2017 22:36:02 UTC] PHP Parse error:  syntax error, unexpected 'align' (T_STRING) in /home/ubuntu/workspace/www/inventory.php on line 74
+[10-Jan-2017 22:36:06 UTC] PHP Parse error:  syntax error, unexpected 'align' (T_STRING) in /home/ubuntu/workspace/www/inventory.php on line 74
+[11-Jan-2017 00:42:49 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/php/getQuestion.php on line 86
+[11-Jan-2017 00:42:49 UTC] PHP Stack trace:
+[11-Jan-2017 00:42:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[11-Jan-2017 00:43:05 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ubuntu/workspace/php/getQuestion.php on line 87
+[11-Jan-2017 00:43:05 UTC] PHP Stack trace:
+[11-Jan-2017 00:43:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[11-Jan-2017 00:43:06 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ubuntu/workspace/php/getQuestion.php on line 87
+[11-Jan-2017 00:43:06 UTC] PHP Stack trace:
+[11-Jan-2017 00:43:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[11-Jan-2017 00:46:31 UTC] PHP Parse error:  syntax error, unexpected ',' in /home/ubuntu/workspace/php/getQuestion.php on line 88
+[11-Jan-2017 00:46:31 UTC] PHP Stack trace:
+[11-Jan-2017 00:46:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[11-Jan-2017 00:49:44 UTC] PHP Parse error:  syntax error, unexpected '$font_family' (T_VARIABLE) in /home/ubuntu/workspace/php/getQuestion.php on line 87
+[11-Jan-2017 00:49:44 UTC] PHP Stack trace:
+[11-Jan-2017 00:49:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/class.php:0
+[11-Jan-2017 03:31:07 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getUserCurrentClothing.php on line 5
+[11-Jan-2017 03:31:07 UTC] PHP Stack trace:
+[11-Jan-2017 03:31:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/inventory.php:0
+[11-Jan-2017 03:31:07 UTC] PHP   2. include() /home/ubuntu/workspace/www/inventory.php:51
+[11-Jan-2017 03:31:18 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getUserCurrentClothing.php on line 5
+[11-Jan-2017 03:31:18 UTC] PHP Stack trace:
+[11-Jan-2017 03:31:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/inventory.php:0
+[11-Jan-2017 03:31:18 UTC] PHP   2. include() /home/ubuntu/workspace/www/inventory.php:51
+[11-Jan-2017 03:31:21 UTC] PHP Fatal error:  Call to a member function bind_param() on a non-object in /home/ubuntu/workspace/php/getUserCurrentClothing.php on line 5
+[11-Jan-2017 03:31:21 UTC] PHP Stack trace:
+[11-Jan-2017 03:31:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/inventory.php:0
+[11-Jan-2017 03:31:21 UTC] PHP   2. include() /home/ubuntu/workspace/www/inventory.php:51
+[11-Jan-2017 05:28:59 UTC] PHP Parse error:  syntax error, unexpected 'user' (T_STRING) in /home/ubuntu/workspace/www/success.php on line 6
+[11-Jan-2017 05:42:37 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/www/findgame.php on line 15
+[11-Jan-2017 05:43:08 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:43:08 UTC] PHP Stack trace:
+[11-Jan-2017 05:43:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:43:16 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:43:16 UTC] PHP Stack trace:
+[11-Jan-2017 05:43:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:43:23 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:43:23 UTC] PHP Stack trace:
+[11-Jan-2017 05:43:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:43:28 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:43:28 UTC] PHP Stack trace:
+[11-Jan-2017 05:43:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:44:26 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:44:26 UTC] PHP Stack trace:
+[11-Jan-2017 05:44:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:44:32 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:44:32 UTC] PHP Stack trace:
+[11-Jan-2017 05:44:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:44:36 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:44:36 UTC] PHP Stack trace:
+[11-Jan-2017 05:44:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:44:45 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:44:45 UTC] PHP Stack trace:
+[11-Jan-2017 05:44:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:47:08 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:47:08 UTC] PHP Stack trace:
+[11-Jan-2017 05:47:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:48:46 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:48:46 UTC] PHP Stack trace:
+[11-Jan-2017 05:48:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:48:56 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:48:56 UTC] PHP Stack trace:
+[11-Jan-2017 05:48:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:49:34 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:49:34 UTC] PHP Stack trace:
+[11-Jan-2017 05:49:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:49:41 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:49:41 UTC] PHP Stack trace:
+[11-Jan-2017 05:49:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:49:51 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 29
+[11-Jan-2017 05:49:51 UTC] PHP Stack trace:
+[11-Jan-2017 05:49:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 05:51:09 UTC] PHP Parse error:  syntax error, unexpected ''">' (T_CONSTANT_ENCAPSED_STRING) in /home/ubuntu/workspace/php/getRequests.php on line 28
+[11-Jan-2017 05:51:09 UTC] PHP Stack trace:
+[11-Jan-2017 05:51:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 15:17:23 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/php/getRequests.php on line 16
+[11-Jan-2017 15:17:23 UTC] PHP Stack trace:
+[11-Jan-2017 15:17:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
+[11-Jan-2017 15:17:25 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/php/getRequests.php on line 16
+[11-Jan-2017 15:17:25 UTC] PHP Stack trace:
+[11-Jan-2017 15:17:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/www/findgame.php:0
